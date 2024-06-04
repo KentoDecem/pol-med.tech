@@ -1,0 +1,52 @@
+{
+  "title_h1": "Polityka Prywatności",
+  "sections": [
+    {
+      "id": "informacje_polmed",
+      "h2": "1. Informacje o Administratorze Danych Osobowych <img src='/images/privacy_policy/setting.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez użytkowników w związku z korzystaniem z serwisu internetowego <a href=\"https://pol-med.tech\" target=\"_blank\">https://pol-med.tech</a>. Administratorem danych osobowych jest:",
+      "content_h3_1": "Firma: P.P.H.U. \"Pol-Med\" Sp. z o.o.",
+      "content_h3_2": "Adres: <a href=\"https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7\" target=\"_blank\">ul. Leśna 38, 86-031 Osielsko</a>",
+      "content_h3_3": "NIP: PL9671167341</h3><h3>REGON: 093140846</h3><h3>KRS: 0000166787",
+      "content_h3_4": "Adres e-mail: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>",
+      "content_h3_5": "Telefon: <a href=\"tel:+48525000260\">+48 52 5000 260</a>; <a href=\"tel:+48601787577\">+48 601 78 75 77</a>;",
+      "content_h3_6": "Kapitał zakładowy - 50.000 PLN (wpłacony w całości)."
+    },
+    {
+      "id": "dane_osobowe",
+      "h2": "2. Dane Osobowe <img src='/images/privacy_policy/client.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Zgromadzenie i przetwarzanie danych osobowych użytkowników jest prowadzone zgodnie z obowiązującymi przepisami prawa, w szczególności z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych (RODO).",
+      "content_p_2": "Nie zbieramy żadnych danych osobowych przekazywanych na stronie internetowej <a href=\"https://pol-med.tech\" target=\"_blank\">https://pol-med.tech</a> bez wyraźnej zgody użytkownika.",
+      "content_p_3": "Nasza strona jest wyposażona w certyfikat SSL, co oznacza, że wszystkie przekazywane informacje są szyfrowane i chronione przed dostępem osób nieupoważnionych."
+    },
+    {
+      "id": "przetwarzanie_danych",
+      "h2": "3. Cel i Zakres Przetwarzania Danych Osobowych <img src='/images/privacy_policy/target1.png' class='privacyPolicyIcon'>",
+      "content_p_1": "<p>Jeśli użytkownik dobrowolnie poda nam swoje dane osobowe (na przykład w <a href=\"https://pol-med.tech/formularz_kontaktowy\" target=\"_blank\">formularzu kontaktowym</a> lub w celu subskrypcji newslettera), będziemy przetwarzać te dane wyłącznie w celu realizacji określonego celu, o którym zostanie poinformowany w chwili ich zbierania. Dostarczone nam dane osobowe nie będą przekazywane osobom trzecim ani wykorzystywane w celach marketingowych bez wyraźnej zgody użytkownika."
+    },
+    {
+      "id": "statystyki",
+      "h2": "4. Analiza Danych i Statystyki <img src='/images/privacy_policy/analysis.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Nasza strona może korzystać z narzędzi do analizy ruchu, takich jak Google Analytics, w celu zbierania anonimowych informacji na temat ruchu na stronie. Te dane są wykorzystywane wyłącznie w celach statystycznych i doskonalenia jakości naszego serwisu. Nie pozwalają one na identyfikację konkretnych użytkowników."
+    },
+    {
+      "id": "utrzymanie_serwisu",
+      "h2": "5. Utrzymanie Strony <img src='/images/privacy_policy/servers.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Strona <a href=\"https://pol-med.tech\" target=\"_blank\">https://pol-med.tech/</a> jest utrzymywana przez firmę <a href=\"https://home.pl/\" target=\"_blank\">Home.pl</a>. Serwis Home dba o zapewnienie wysokiego poziomu bezpieczeństwa i ochrony danych, co obejmuje monitorowanie serwera i zapobieganie ewentualnym incydentom związanym z bezpieczeństwem."
+    },
+    {
+      "id": "prawa_uzytkownika",
+      "h2": "6. Prawa Użytkowników <img src='/images/privacy_policy/social-justice.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Zgodnie z RODO, użytkownicy mają prawo dostępu do swoich danych osobowych, ich poprawiania, usuwania lub ograniczania przetwarzania, a także prawo do przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania danych osobowych. Wszelkie pytania i prośby dotyczące danych osobowych prosimy kierować na adres e-mail: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>."
+    },
+    {
+      "id": "zmiany_polityki_prywatnosci",
+      "h2": "7. Zmiany w Polityce Prywatności <img src='/images/privacy_policy/shuffle.png' class='privacyPolicyIcon'>",
+      "content_p_1": "Zastrzegamy sobie prawo do zmiany Polityki Prywatności w celu dostosowania jej do zmieniających się potrzeb i przepisów prawnych. Aktualna wersja Polityki Prywatności zawsze będzie dostępna na stronie:<br> <a href=\"https://pol-med.tech/polityka_prywatnosci\" target=\"_blank\">https://pol-med.tech/polityka_prywatnosci</a>"
+    }
+  ],
+  "update_date": "17.03.2024",
+  "last_updated": "Data aktualizacji: <span>17.03.2024 <img src='/images/navigation/arrow.png' class='arrow'> </span>",
+  "legacy": "Ta wersja Polityki Prywatności jest nieaktualna. Aby zapoznać się z aktualną wersją Polityki Prywatności, prosimy odwiedzić stronę: <a href=\"https://pol-med.tech/polityka_prywatnosci\">https://pol-med.tech/polityka_prywatnosci</a>",
+  "download": "Pobierz PDF"
+}

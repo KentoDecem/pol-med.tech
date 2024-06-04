@@ -1,0 +1,72 @@
+<%- include('partials/navigation.ejs', {activePage: 'narzedzia'}) %>
+
+<section id="narzedzia">
+
+    <header id="narzedziaHero">
+        <div class="heroLeft">
+
+            <div class="heroText">
+                <h1><%= narzedzia.tytul %></h1>
+                <h2><%= narzedzia.opis %></h2>
+                
+                <div id="heroButtons">
+                    <button class="heroButton1"><%= narzedzia.guzik1 %></button>
+                    <button class="heroButton2"><%= narzedzia.guzik2 %></button>
+                </div>
+            </div>
+
+        </div>
+
+        <img class="spikes" src="images/narzedzia/spikes11.svg">
+
+    </header>
+
+    <div id="narzedziaOpisContainer">
+    
+        <div id="narzedziaOpis">
+            <h2><%= narzedzia.sekcja2Tytul %></h2>
+            <h3><%= narzedzia.sekcja2h3 %></h3>
+        </div>
+
+        <div id="narzedziaOferta">
+            <h2><%= narzedzia.sekcja3h2 %></h2>
+            <div id="narzedziaOfertaLista">
+                <ul>
+                    <li data-image=0><%= narzedzia.sekcja3li_0 %></li>
+                    <li data-image=1><%= narzedzia.sekcja3li_1 %></li>
+                    <li data-image=2><%= narzedzia.sekcja3li_2 %></li>
+                    <li data-image=3><%= narzedzia.sekcja3li_3 %></li>
+                    <li data-image=4><%= narzedzia.sekcja3li_4 %></li>
+                    <li data-image=5><%= narzedzia.sekcja3li_5 %></li>
+                    <li data-image=6><%= narzedzia.sekcja3li_6 %></li>
+                    <li data-image=7><%= narzedzia.sekcja3li_7 %></li>
+                    <li data-image=8><%= narzedzia.sekcja3li_8 %></li>
+                    <li data-image=9><%= narzedzia.sekcja3li_9 %></li>
+                </ul>
+
+                <div id="narzedziaOfertaImage">
+                    <img class="narzedzia-image" src="/images/narzedzia/narzedzia4.jpg">
+                    <img class="tools-spikes" src="images/narzedzia/tools-spikes.svg">
+                    <img class="tools-spikes-vertical" src="images/narzedzia/tools-spikes-vertical.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="narzedziaUslugiContainer">
+        <div id="narzedziaUslugi">
+            <h2><%= narzedzia.sekcja4h2 %></h2>
+            <ul>
+                <li><img src="images/narzedzia/job-cv.png"><%= narzedzia.sekcja4li_0 %></li>
+                <li><img src="images/narzedzia/metal.png"><%= narzedzia.sekcja4li_1 %></li>
+                <li><img src="images/narzedzia/precision.png"><%= narzedzia.sekcja4li_2 %></li>
+                <li><img src="images/narzedzia/money-bag.png"><%= narzedzia.sekcja4li_3 %></li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+
+
+<%- include('partials/footer.ejs', {activePage: 'narzedzia'}) %>

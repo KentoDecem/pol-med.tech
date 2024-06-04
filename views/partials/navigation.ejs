@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pol - Med</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1c375b">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="/styles/navigation.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/polityka.css">
+    <link rel="stylesheet" href="/styles/edukacja.css">
+    <link rel="stylesheet" href="/styles/edukacja-stanowiska.css">
+    <link rel="stylesheet" href="/styles/narzedzia.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/oleje.css">
+    <link rel="stylesheet" href="/styles/o_nas.css">
+    <link rel="stylesheet" href="/styles/kontakt.css">
+    <link rel="stylesheet" href="/styles/prawa_autorskie.css">
+    <link rel="stylesheet" href="/styles/interaktywna-platforma.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZNP0CXWZZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GZNP0CXWZZ');
+</script>
+
+<nav>
+    <div class="left">
+
+        <!-- logo -->
+        <a href="/" class="<%= activePage === 'home' ? 'active' : '' %>"><img src="/images/navigation/pol-med_logo.png" class="pol-med_logo"></a>
+
+        <!-- menu -->
+        <ul>
+            <li><a href="/edukacja" class="<%= activePage === 'edukacja' ? 'activePage' : '' %>"> 
+                <%= navigation.edukacja %> 
+            </a></li>
+
+            <li><a href="/oleje" class="<%= activePage === 'oleje' ? 'activePage' : '' %>"> 
+                <%= navigation.oleje %> 
+            </a></li>
+
+            <li><a href="/narzedzia" class="<%= activePage === 'narzedzia' ? 'activePage' : '' %>"> 
+                <%= navigation.narzedzia %> 
+            </a></li>
+
+            <li><a href="/kontakt" class="<%= activePage === 'kontakt' ? 'activePage' : '' %>"> 
+                <%= navigation.kontakt %> 
+            </a></li>
+
+            <li><a href="/o_nas" class="<%= activePage === 'o_nas' ? 'activePage' : '' %>"> 
+                <%= navigation.o_nas %> 
+            </a></li>
+        </ul>
+
+        <!-- First Impression Animation -->
+        <script>
+        var currentValue = window.sessionStorage.getItem('navigation');   
+        var pageOpenCount = parseInt(currentValue) || 0;
+
+        if (pageOpenCount<1) {
+            document.querySelector('nav ul').classList.add('navUlAppear')
+            document.querySelector('.pol-med_logo').classList.add('navLogoAppear')
+        }
+        pageOpenCount++;
+        window.sessionStorage.setItem('navigation', pageOpenCount);
+        </script>
+    </div>
+
+    <div class="right">
+
+        <!-- Language Functionality -->
+        <div class="languageContainer">
+
+            <!-- language button -->
+            <div class="languageButton">
+                <img src="/images/navigation/flag_<%= navigation.languageShorthand %>.png" class="flag">
+                <span class="languageName"><%= navigation.languageName %></span>
+                <img src="/images/navigation/arrow.png" class="arrow">
+            </div>
+
+
+
+            <!-- language dropdown -->
+            <form class="languageDropdown" method="GET">
+
+                <% notSelectedList.forEach(function(lang) { %>
+                    <div class="<%= lang %>" data-lang="<%= lang %>">
+                        <img src="/images/navigation/flag_<%= lang %>.png" class="flag">
+                        <span><%= fullLanguageNames[lang] %></span>
+                    </div>
+
+                <% }); %>
+
+                <input type="submit" style="display:none">
+            </form>
+
+        </div>
+    </div>
+</nav>

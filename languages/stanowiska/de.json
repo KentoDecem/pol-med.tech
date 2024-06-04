@@ -1,0 +1,65 @@
+{
+    "kup": "Fragen Sie nach Details",
+    "lista": [
+        {
+            "id": 1,
+            "ilosc_zdjec": 5,
+            "tytul": "Set zur Prüfung von Pumpen und Einspritzdüsen",
+            "opis": "Dies ist ein umfassendes Werkzeug zur Diagnose und Reparatur von Einspritzsystemen in Dieselmotoren. Es ermöglicht eine genaue Überprüfung der Arbeitsparameter von Pumpen und Einspritzdüsen, um Fehler zu identifizieren und zu beheben."
+        },
+        {
+            "id": 2,
+            "ilosc_zdjec": 7,
+            "tytul": "Turbocharger Test Stand",
+            "opis": "Dies ist ein fortschrittliches Gerät, das eine umfassende Bewertung und Reparatur von Turboladern ermöglicht. Es ermöglicht präzise Messungen von Arbeitsparametern wie Drehzahl, Ladedruck, Dichtheit und Leistung. Dadurch können selbst kleinste Defekte identifiziert und der Turbolader wieder voll funktionsfähig gemacht werden."
+        },
+        {
+            "id": 3,
+            "ilosc_zdjec": 2,
+            "tytul": "Pneumatisches Bremssystem",
+            "opis": "Die Steuerung des pneumatischen Bremssystems ist ein Schlüsselelement für sicheres und komfortables Fahren. Dieses System verwendet komprimierte Luft zur Steuerung der Bremszylinder und ermöglicht so ein sanftes und effizientes Bremsen."
+        },
+        {
+            "id": 4,
+            "ilosc_zdjec": 3,
+            "tytul": "Set zur Demonstration der hydraulischen Bremssteuerung",
+            "opis": "Dieses Set ermöglicht die Visualisierung und das Verständnis wichtiger Elemente des Bremsystems, wie Bremspumpe, Bremszylinder, Bremsleitungen und Bremsbeläge."
+        },
+        {
+            "id": 5,
+            "ilosc_zdjec": 2,
+            "tytul": "Temperatursimulationssatz PCT",
+            "opis": "Ein fortschrittliches Werkzeug, das eine präzise Simulation verschiedener Temperaturprofile in einem weiten Bereich ermöglicht. Dies ist die ideale Lösung für das Testen und Validieren von Temperatursteuersystemen in verschiedenen Industriezweigen."
+        },
+        {
+            "id": 6,
+            "ilosc_zdjec": 2,
+            "tytul": "Fahrzeugbeleuchtung",
+            "opis": "Ein Set von Lampen und Scheinwerfern, die die Sichtbarkeit des Fahrzeugs auf der Straße bei schlechten Lichtverhältnissen verbessern und andere Verkehrsteilnehmer über dessen Präsenz und Manöver informieren."
+        },
+        {
+            "id": 7,
+            "ilosc_zdjec": 3,
+            "tytul": "Set zur Demonstration des hydraulischen Federungssystems",
+            "opis": "Dieses Set ermöglicht die Visualisierung und das Verständnis wichtiger Elemente des Federungssystems, wie Hydraulikpumpe, hydraulische Zylinder, Hydraulikleitungen und Stoßdämpfer."
+        },
+        {
+            "id": 8,
+            "ilosc_zdjec": 2,
+            "tytul": "Injektorprüfsatz",
+            "opis": "Ein unverzichtbares Werkzeug für jeden Mechaniker, der sich mit der Diagnose und Reparatur von Benzin- und Dieselmotoren befasst. Dieses Set ermöglicht eine genaue Überprüfung der Arbeitsparameter von Injektoren, wie Leistung, Kraftstoffzerstäubung, Dichtheit und Öffnungs- / Schließzeit."
+        },
+        {
+            "id": 9,
+            "ilosc_zdjec": 1,
+            "tytul": "Set zur Demonstration der pneumatischen Federungssteuerung",
+            "opis": "Dieses Set ermöglicht die Visualisierung und das Verständnis wichtiger Elemente des Federungssystems, wie Luftkompressor, pneumatische Zylinder, pneumatische Leitungen und Luftfedern."
+        },
+        {
+            "id": 10,
+            "ilosc_zdjec": 1,
+            "tytul": "Lehrmotor",
+            "opis": "Ein Motor zur Überprüfung von Arbeitsparametern sowie zum Erlernen des Aufbaus und der Umsetzung grundlegender Lehrinhalte im Bereich des Motorenbaus und der Diagnose von Verbrennungsmotoren."
+        }
+    ]
+}

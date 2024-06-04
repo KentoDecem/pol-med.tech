@@ -1,0 +1,29 @@
+
+{
+    "tytul": "Teaching and laboratory stations",
+    "opis": "These are integrated teaching modules that enable learning about various aspects of automotive technologies in a practical and engaging way.",
+    "guzik1": "See Offer",
+    "guzik2": "Contact Us",
+
+    "text_new": "New on the market",
+    "platforma_h3": "Interactive educational platform",
+    "platforma_p": "The didactic station for automotive mechatronics workshops provides an interactive educational platform, enabling students to learn how to create an engine work map. The main element of the station is the Universal Control Computer, which allows for controlling the engine with spark ignition and electronic fuel injection.",
+  
+
+    "sekcja2Tytul": "We offer",
+    "sekcja2li_1": "<b>Testing and Measurement Equipment:</b> A wide selection of highly precise testing and measurement devices and tools for vehicle diagnostics and servicing.",
+    "sekcja2li_2": "<b>Testing Stations:</b> Modern testing stations equipped with the latest technologies, enabling research and testing of various vehicle systems and components.",
+    "sekcja2li_3": "<b>Educational Stations:</b> Interactive educational stations designed for learning about the construction, diagnostics, and maintenance of hybrid and electric vehicles.",
+    "sekcja2li_4": "<b>Courses and Training:</b> Comprehensive courses and training in onboard diagnostics and servicing of hybrid and electric vehicles, with certification for up to 1kV.",
+
+    "videoTytul1": "Fault Simulation Panel",
+    "videoTytul2": "Engine diagnostic procedures",
+    "videoTytul3": "Oscilloscope tests",
+    "videoOpis1": "This is an advanced system enabling the generation of typical combustion engine control faults, thanks to which students acquire practical skills in implementing diagnostic procedures for detecting and locating faults using specialized diagnostic devices.",
+    "videoOpis2": "A teaching station enabling the implementation of diagnostic procedures for assessing the technical condition of an internal combustion engine using specialized instrumentation and allowing for quick location and verification of faults.",
+    "videoOpis3": "The station allows you to use the capabilities of a universal oscilloscope to verify the operating parameters of an internal combustion engine. This constitutes the basis for activities carried out in the field of identifying the technical condition of the combustion engine.",
+    "tytulLista": "Demonstration and measurement stations:",
+    "guzikItem": "More Information",
+
+    "dostosowujemy": "We adapt the products we offer to the individual needs and requirements of customers."
+}

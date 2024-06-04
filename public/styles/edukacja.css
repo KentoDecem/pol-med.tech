@@ -1,0 +1,1511 @@
+#edukacja {
+    width: 100%;
+
+    --font-size-h3: 2rem;
+    --font-size-h4: 1.4rem;
+}
+
+
+#edukacjaHeroContainer {
+    z-index: 2;
+    position: relative;
+}
+
+#edukacjaHero {
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    min-height: 850px;
+    width: 100%;
+    /* background-color: var(--hover-white); */
+    /* background-color: white;
+    background-image: url("/images/edukacja/bg.png");
+    background-position: right bottom;
+    background-attachment: scroll;
+    background-size: auto 100%;
+    background-repeat: repeat-x; */
+    align-items: center;
+    display: flex;
+
+    /* box-shadow: 0px 0px 4px 6px var(--footer-black), inset 0px 30px 34px -12px var(--main-blue); */
+    /* filter: drop-shadow(0px -4px 4px var(--footer-black)); */
+
+    animation: backgroundAppear 1s ease-out;
+    -webkit-animation: backgroundAppear 1s ease-out;
+}
+
+#edukacjaHero::before {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    background-image: url("/images/edukacja/bg-compressed.jpg");
+    background-position: right bottom;
+    background-attachment: scroll;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+
+/* For broken background attachment */
+/* @media (max-width: 767px) {
+    #edukacjaHero {
+        background-attachment: scroll;
+    }
+} */
+
+
+.heroLeft {
+    position: relative;
+    z-index: 115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+}
+
+
+
+
+
+.heroText {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    color: white;
+    animation: heroText 1s ease-in;
+}
+
+#heroButtons {
+    display: flex;
+    gap: 20px;
+}
+
+#heroButtons * {
+    cursor: pointer;
+    width: fit-content;
+    padding: 5px 25px 10px 25px;
+    margin: 20px 0;
+    font-weight: 600;
+    transition: scale 0.3s;
+    font-size: 1.6rem;
+    font-family: var(--font-main), sans-serif;
+}
+
+#heroButtons *:hover {
+    scale: 1.1;
+}
+
+.heroButton1 {
+    background-color: var(--button-green);
+    border: solid 2px var(--button-green);
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0px 6px 34px -12px var(--button-green);
+}
+
+.heroButton2 {
+    background-color: transparent;
+    border: solid 3px white;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 34px -12px rgba(255, 255, 255, 1);
+    transition: box-shadow 0.3s;
+}
+
+#edukacjaHero h1 {
+    margin: 0;
+    text-shadow: 1px 1px 2px var(--main-blue);
+    font-family: var(--font-hero), sans-serif;
+    font-size: 3.5rem;
+    /* color: var(--main-blue); */
+    max-width: 90%;
+}
+
+#edukacjaHero h2 {
+    border: solid 0 var(--button-green);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.13));
+    border-radius: 5px 15px 15px 5px;
+    border-left-width: 4px;
+    box-shadow: 0 0 10px #00000033;
+    padding: 5px 10px;
+    margin: 0;
+    font-family: var(--font-hero), sans-serif;
+    font-size: 1.7rem;
+    /* color: var(--main-blue); */
+    max-width: 85%;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .heroButton2 {
+        background-color: rgba(255, 255, 255, 0.205);
+        -webkit-backdrop-filter: brightness(0.9) blur(0.5em);
+        backdrop-filter: brightness(0.9) blur(0.5em);
+    }
+}
+
+
+.fg {
+    position: absolute;
+    z-index: 2;
+    bottom: -150px;
+    width: fit-content;
+    pointer-events: none;
+    right: 0;
+    filter: drop-shadow(0 0 3px var(--main-blue)) drop-shadow(0 0 75px white);
+
+    animation: fgAppear 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.custom-shape-divider-bottom-1713969268 {
+
+    z-index: 2;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713969268 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 77px;
+}
+
+.custom-shape-divider-bottom-1713969268 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.heroForm {
+    opacity: 0;
+    position: absolute;
+}
+
+/* Animated hero */
+@keyframes heroText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {}
+}
+
+@keyframes fgAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) translateY(-50px);
+    }
+
+    100% {}
+}
+
+@keyframes backgroundAppear {
+    0% {
+        background-position: 50% top;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
+/* Coming Soon */
+/* 
+.heroFormShow {
+    opacity:0;
+    animation : heroFormShow 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroFormShow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        pointer-events: auto;
+        opacity:1;
+    }
+}
+
+.heroFormHide {
+    display:block;
+    animation : heroFormHide 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroFormHide {
+    0% {
+        opacity:1;
+    }
+    100% {
+        pointer-events: none;
+        opacity:0;
+    }
+}
+
+
+.fg2FormHide {
+    animation : fg2FormHide 1.5s;
+    animation-fill-mode: forwards;
+    transform: translateX(0);
+}
+
+@keyframes fg2FormHide {
+    0% {
+        transform: translateX(1000px) translateY(150px);
+    }
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+.fg2FormShow {
+    animation: fg2FormShow 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fg2FormShow {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1000px) translateY(250px);
+    }
+}
+
+.bgMove {
+    animation: bgMove 1.5s ease; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: right bottom;
+
+    }
+    100% {
+        background-position: left top;
+    }
+}
+
+.bgBack {
+    animation: bgBack 1.5s ease; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgBack {
+    0% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
+
+.heroTextShow {
+    animation: heroTextShow 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroTextShow {
+    0% {
+        opacity:1;
+
+    }
+    100% {
+        transform: translateX(500px) translateY(500px);
+        opacity:0;
+    }
+}
+
+.heroTextHide {
+    animation: heroTextHide 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroTextHide {
+    0% {
+        opacity:0;
+        transform: translateX(500px) translateY(500px);
+    }
+    100% {
+        opacity:1;
+    }
+} 
+*/
+
+
+/* Responsive hero */
+
+@media (max-width:2000px) {
+    .fg {
+        width: fit-content;
+        top: -25px;
+    }
+}
+
+@media (max-width:1800px) {
+    .fg {
+        width: fit-content;
+        bottom: 25px;
+        right: -25px;
+    }
+
+    .heroLeft {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1600px) {
+    @keyframes backgroundAppear {
+        0% {
+            background-position: 60% top;
+        }
+
+        100% {
+            background-position: right bottom;
+        }
+    }
+
+    .fg {
+        width: fit-content;
+        right: -12%;
+    }
+
+    .heroLeft {
+        width: 1000px;
+    }
+
+}
+
+@media (max-width: 1400px) {
+
+    @keyframes backgroundAppear {
+        0% {
+            background-position: 70% top;
+        }
+
+        100% {
+            background-position: right bottom;
+        }
+    }
+
+    /* @keyframes bgMove {
+        0% {
+            background-position: right bottom;
+
+        }
+        100% {
+            background-position:  75% top;
+        }
+    }
+
+    @keyframes bgBack {
+        0% {
+            background-position: 75% top;
+        }
+        100% {
+            background-position: right bottom;
+        }
+    } */
+
+    .heroText {
+        /* background-color: purple; */
+        width: 800px;
+        padding: 50px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    @keyframes backgroundAppear {
+        0% {
+            background-position: 85% top;
+        }
+
+        100% {
+            background-position: right bottom;
+        }
+    }
+
+    /* #edukacjaHero {
+        height: 800px;
+    } */
+
+    .heroLeft {
+        width: 100%;
+        /* background-color: red; */
+        height: 60%;
+        /* margin-top:60px; */
+    }
+
+
+    #edukacjaHero h2 {
+        max-width: 100%;
+    }
+
+
+    .fg {
+        right: -30%;
+        width: 1300px;
+        top: 300px;
+    }
+}
+
+@media (max-width:600px) {
+    @keyframes backgroundAppear {
+        0% {
+            background-position: 90% top;
+        }
+
+        100% {
+            background-position: right bottom;
+        }
+    }
+
+    .heroLeft {
+        /* background-color: red; */
+        height: 55%;
+        /* margin-bottom: 235px; */
+    }
+
+    .fg {
+        right: -100px;
+        width: 1100px;
+        top: 430px;
+        z-index: 35;
+    }
+
+
+    #heroButtons * {
+        font-size: 1.3rem;
+    }
+
+    #edukacjaHero h1 {
+        font-size: 2.3rem;
+    }
+
+    #edukacjaHero h2 {
+        font-size: 1.3rem;
+    }
+
+    #heroButtons {
+        flex-direction: column;
+    }
+
+    #heroButtons * {
+        padding: 10px 25px 10px 25px;
+        margin: 10px 0;
+    }
+}
+
+
+/*// Dostosuj twarze ludzi */
+/*// popraw linię w prawym dolnym rogu */
+
+/*// Zmien jasność tła */
+/*// Dodaj responsywność */
+/* // dodaj prostą animację że stacja przesuwa się przy ładowaniu*/
+
+
+
+
+main {
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+
+.custom-shape-divider-top-1714030339 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1714030339 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 77px;
+}
+
+.custom-shape-divider-top-1714030339 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* VideoPresentation */
+#videoPresentationContainer {
+    background-color: var(--hero-white);
+    width: 100%;
+    padding: 200px 0 200px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+}
+
+#videoPresentation {
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 95px;
+}
+
+#videoPresentation div {
+    display: flex;
+    width: fit-content;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+}
+
+#videoPresentation div div {
+    flex-direction: column;
+    max-width: 50%;
+    gap: 15px;
+    background-color: var(--main-blue);
+    border-radius: 15px;
+    padding: 45px;
+    position: relative;
+}
+
+
+#videoPresentation div div::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid #ffea00;
+    border: solid var(--main-blue) 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#videoPresentation span {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+#videoPresentation iframe {
+    border-radius: 25px;
+    border: solid 6px white;
+    /* box-shadow: 0 0 0 6px var(--main-blue); */
+    min-width: 550px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.578) 0 15px 25px;
+}
+
+#videoPresentation img {
+    width: 75px;
+    height: 75px;
+}
+
+#videoPresentation h3 {
+    text-shadow: 1px 1px 2px white;
+    font-family: var(--font-hero), sans-serif;
+    color: white;
+    border: solid 0px white;
+    padding: 15px 30px;
+    border-radius: 15%;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#videoPresentation h4 {
+    font-family: var(--font-main), sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.custom-shape-divider-bottom-1714035220 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1714035220 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 77px;
+}
+
+.custom-shape-divider-bottom-1714035220 .shape-fill {
+    fill: var(--button-green);
+}
+
+@media (max-width:1500px) {
+    #videoPresentation div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #videoPresentation div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media(max-width:1400px) {
+    #videoPresentation div div {
+        max-width: 95%;
+    }
+}
+
+@media(max-width:1000px) {
+    #videoPresentation h3 {
+        font-size: 2rem;
+    }
+
+    #videoPresentation h4 {
+        font-size: 1.3rem;
+    }
+
+    #videoPresentation span {
+        flex-direction: column-reverse;
+    }
+
+    #videoPresentation div div {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    #videoPresentation {
+        width: 90%;
+    }
+
+    #videoPresentation iframe {
+        box-shadow: none;
+        width: 90%;
+        min-width: 10px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    #videoPresentation {
+        width: 90%;
+    }
+
+    #videoPresentation iframe {
+        width: 95%;
+        min-width: 5px;
+        height: 190px;
+    }
+
+    #videoPresentation span {
+        gap: 15px
+    }
+
+    #videoPresentation h3 {
+        font-size: 1.6rem;
+    }
+
+    #videoPresentation h4 {
+        font-size: 1.1rem;
+    }
+
+    #videoPresentation div {
+        gap: 25px;
+    }
+
+    #videoPresentation div div {
+        padding: 35px 25px;
+    }
+}
+
+
+/* Oferta Mechatronika */
+/* ------------------ */
+
+
+#ofertaMechatronikaContainer {
+    width: 100%;
+    padding: 100px 0 200px 0;
+    position: relative;
+
+
+    /* do wykasowania */
+    /* background-color: red; */
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#ofertaMechatronika {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    border-radius: 15px 20% 20% 15px;
+    gap: 75px;
+    box-shadow: rgb(255, 156, 197) 0 0px 15px;
+}
+
+#ofertaMechatronika::after {
+    position:absolute;
+    border-radius: 15px 20% 20% 15px;
+    z-index: -1;
+    top:-12px;
+    bottom: -12px;
+    left: -12px;
+    right: -12px;
+    content: "";
+    background: linear-gradient(to left, rgb(255, 68, 127, 0.7), rgba(255, 105, 68, 0.4));
+    transition: box-shadow 0.3s;
+    -webkit-transition: box-shadow 0.3s;
+}
+
+#ofertaMechatronika:hover::after {
+    box-shadow: rgba(0, 0, 0, 0.315) 0 15px 25px;
+}
+
+#ofertaMechatronika img {
+    max-width: 500px;
+    min-width: 350px;
+    width: fit-content;
+    border-radius: 25px;
+    height:fit-content;
+    aspect-ratio: 1 / 1;
+}
+
+.imgPlatformaA {
+    position:relative;
+    max-width: 500px;
+    min-width: 350px;
+    width:fit-content;
+    height: fit-content;
+    display:flex;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 25px;
+}
+
+.imgPlatformaA::after {
+    opacity:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+    top:0;
+    left:0;
+    content:"";
+    z-index: -1;
+    background-image: url("../images/edukacja/interaktywna_platforma/platforma.jpg");
+    background-size: cover;
+    transition: opacity 0.5s ease, z-index 0ms 0.5s;
+}
+
+.imgPlatformaA:hover::after {
+    opacity: 1;
+    z-index: 5;
+    transition: opacity 0.5s ease;
+}
+
+
+#ofertaMechatronikaText {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    flex-grow: 2;
+}
+
+#ofertaMechatronikaText h3 {
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--main-blue);
+    font-family: var(--font-hero), sans-serif;
+    color: var(--main-blue);
+    padding: 15px 10px;
+    border: solid 5px var(--main-blue);
+    border-width: 0 0 5px 0;
+    border-radius: 15%;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#ofertaMechatronikaText p {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+#ofertaMechatronikaText a {
+    text-shadow: 1px 1px 2px var(--main-blue);
+    font-family: var(--font-main), sans-serif;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    width: fit-content;
+    text-decoration: none;
+    transition: scale 0.3s;
+    border-radius: 12px;
+}
+
+#ofertaMechatronikaText a:hover {
+    scale: 1.1;
+}
+
+.text-new {
+    position:absolute;
+    top:-120px;
+    left:0;
+    font-family: var(--font-main), sans-serif;
+    color: rgba(233, 97, 97, 0.9);
+    background: linear-gradient(to left, rgba(255, 68, 112, 0.937), rgba(255, 105, 68, 0.69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-size: 2rem;
+}
+@media (max-width:1500px) {
+    #ofertaMechatronika {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:1000px) {
+    #ofertaMechatronikaText h3 {
+        font-size: 2rem;
+    }
+
+    #ofertaMechatronikaText p {
+        font-size: 1.3rem;
+    }
+
+    #ofertaMechatronikaText a {
+        font-size: 1.4rem;
+    }
+
+    #ofertaMechatronika {
+        border-radius: 25px;
+    }
+
+    .text-new {
+        font-size: 1.5rem;
+        top:-86px;
+    }
+    
+    #ofertaMechatronika::after {
+        border-radius: 25px;
+    }
+    .imgPlatformaA {
+        max-width: 90%;
+        min-width: 10px;
+        width:90%;
+        height: auto;
+    }
+    #ofertaMechatronika img {
+        max-width: 90%;
+        min-width: 5px;
+        width: 90%;
+        height:90%;
+        border-radius: 25px;
+        height: auto;
+    }
+
+}
+
+@media(max-width:450px) {
+    #ofertaMechatronika {
+        padding: 25px 15px;
+        width: 80%;
+        gap: 25px;
+    }
+}
+
+
+/* Oferta */
+#oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--button-green) 0%, white 100%);
+}
+
+.ofertaTitle {
+    font-size: 2.1rem;
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--main-blue);
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ofertaTitle h2 {
+    width: fit-content;
+    border: solid 0px var(--main-blue);
+    border-bottom-width: 5px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 50px;
+}
+
+.ofertaBox {
+    width: 90%;
+    height: fit-content;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 50px;
+    /* box-shadow: 0 20px 20px -4px var(--hero-white); */
+    padding: 50px 0 100px 0;
+}
+
+.ofertaItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px 75px;
+}
+
+.item {
+    height: 300px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    border-radius: 50px 5px 50px 5px;
+    box-shadow: 0 10px 20px -5px rgba(37, 84, 142, 0.408);
+    outline-offset: -5px;
+    outline: 8px double transparent;
+    padding: 20px 30px;
+    margin: 10px;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: outline 0.5s;
+}
+
+.item:hover {
+    outline: 8px double rgba(37, 85, 142, 0.62);
+}
+
+.itemText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    max-width: 50%;
+    color: var(--main-blue);
+    font-family: var(--font-main), sans-serif;
+}
+
+.itemImage {
+    height: 75%;
+    max-width: 50%;
+    filter: drop-shadow(0 0 10px rgb(205, 215, 221));
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.itemImageTransparent,
+.itemImageHover {
+    transition: opacity 0.5s;
+}
+
+.itemImageTransparent {
+    opacity: 1;
+}
+
+.itemImageHover {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.itemImage:hover .itemImageHover {
+    opacity: 1;
+}
+
+.itemImage:hover .itemImageTransparent {
+    opacity: 0;
+}
+
+.itemImage img {
+    position: absolute;
+    height: 100%;
+    filter: drop-shadow(0 0 15px rgba(3, 37, 73, 0.244));
+    border-radius: 30px;
+    transition: opacity 0.5s;
+}
+
+
+.item:nth-of-type(1) .itemImage,
+.item:nth-of-type(2) .itemImage {
+    height: 60%;
+}
+
+.item:nth-of-type(7) .itemImageHover {
+    height: 65%;
+}
+
+
+
+.itemText h3 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.itemText h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    max-height: 83px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Maksymalna liczba wierszy */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemLink {
+    color: var(--main-blue);
+    font-family: var(--font-main), sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 7px 20px 12px 20px;
+    margin-top: 5px;
+    width: fit-content;
+    text-decoration: none;
+    background-color: #25558e9e;
+    color: rgba(226, 227, 255, 1);
+    position: relative;
+    transition: color 0.3s, background-color 0.3s, scale 0.3s;
+}
+
+.itemLink img {
+    position: absolute;
+    width: 0px;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    right: -18%;
+    margin: auto;
+    filter: drop-shadow(2px 5px 0px rgba(3, 37, 73, 0.244));
+    transition: width 0.3s, opacity 0.3s;
+}
+
+.itemLink:hover {
+    background-color: rgba(37, 85, 142, 0.62);
+    color: rgb(251, 251, 255);
+    scale: 1.05;
+}
+
+.itemLink:hover img {
+    width: 38px;
+    opacity: 0.6;
+    pointer-events: auto;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    .ofertaItems {
+        gap: 40px;
+    }
+
+    .item {
+        width: 80%;
+        margin: 25px;
+        height: fit-content;
+        flex-direction: column-reverse;
+        padding: 11% 0 11% 0;
+        margin: 5%;
+        gap: 25px;
+    }
+
+    .itemImage {
+        align-self: center;
+        height: 50%;
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .itemImage img {
+        height: 100%;
+        width: auto;
+    }
+
+    .item:nth-of-type(1) .itemImage,
+    .item:nth-of-type(2) .itemImage {
+        height: 50%;
+        min-height: 150px;
+    }
+
+    .itemText {
+        max-width: 70%;
+    }
+
+    .itemText h3 {
+        font-size: 1.3rem;
+    }
+
+    .itemText h4 {
+        font-size: 1rem;
+    }
+
+    .itemLink {
+        font-size: 1rem;
+    }
+
+    .ofertaTitle h2 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .ofertaTitle {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .item:nth-of-type(1) .itemImage,
+    .item:nth-of-type(2) .itemImage {
+        min-height: 90px;
+    }
+
+    .itemImage {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .item:nth-of-type(1) .itemImage,
+    .item:nth-of-type(2) .itemImage {
+        min-height: 70px;
+    }
+
+    .itemImage {
+        min-height: 150px;
+    }
+
+    .ofertaTitle h2 {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+}
+
+
+/* Nasza firma oferuje | Sekcja 2*/
+#edukacjaListaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#edukacjaLista {
+    position: relative;
+    padding: 100px 25px;
+    z-index: 200;
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    min-height: 200px;
+    width: 70%;
+    background-color: white;
+    /* filter: drop-shadow(0px -4px 4px white); */
+    /* box-shadow: 0px 20px 24px white, 0px -5px 24px white; */
+
+}
+
+#edukacjaLista h2 {
+    margin: 0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main-blue);
+    width: fit-content;
+    padding: 15px 45px;
+    border-radius: 20px;
+    border: solid 5px white;
+    box-shadow: inset 0 0 50px 11px rgb(41, 71, 116), 0 0 2px 1px rgb(41, 71, 116);
+    filter: drop-shadow(0 0 5px var(--main-blue)) drop-shadow(0 0 10px var(--main-blue));
+}
+
+#edukacjaLista ul {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    font-weight: 600;
+}
+
+#edukacjaLista li {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    max-width: 1000px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #e6e6e6c8, rgba(0, 0, 0, 0));
+    border: solid 4px var(--main-blue);
+    border-width: 0 0 0 4px;
+    border-radius: 5px;
+
+    transform: translateX(-1500px);
+}
+
+#edukacjaDostosowujemyContainer {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:75px 0 150px 0;
+}
+
+#edukacjaDostosowujemy {
+    width:75%;
+    display:flex;
+}
+
+#edukacjaDostosowujemy h3 {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin: 0;
+
+    /* text-align: center; */
+}
+
+@media (max-width:850px) {
+    #edukacjaLista h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #edukacjaLista li {
+        font-size: 1.7rem;
+    }
+
+    #edukacjaDostosowujemy h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:750px) {
+    #edukacjaLista h2 {
+        font-size: 2.2rem;
+    }
+
+    #edukacjaLista li {
+        font-size: 1.2rem;
+    }
+
+    #edukacjaListaContainer div {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:650px) {
+    #edukacjaLista h2 {
+        font-size: 1.8rem;
+    }
+
+    #edukacjaLista li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:570px) {
+    #edukacjaLista {
+        width: 90%;
+    }
+}
+
+
+
+
+/* for race */
+#carRace {
+    padding-top: 60px;
+    background-color: transparent;
+    z-index: 2;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 13;
+    bottom: 0;
+    box-shadow: inset 0 -22px 2px var(--main-blue);
+}
+
+
+.leftCarsFooter {
+    opacity: 0.6;
+    position: absolute;
+    height: auto;
+    width: 700px;
+    left: -100px;
+    transform: translateX(-700px);
+    filter: drop-shadow(0 0 0 var(--main-blue) drop-shadow(10px 100px 0 red));
+}
+
+.rightCarFooter {
+    opacity: 0.6;
+    bottom: -25px;
+    height: auto;
+    width: 240px;
+    right: 0px;
+    position: absolute;
+    transform: translateX(0px);
+    opacity: 1;
+    filter: drop-shadow(0 0 0 var(--main-blue) drop-shadow(10px 100px 0 red));
+}
+
+.car-moving {
+    opacity: 0;
+    /* animation:carMoving 1.5s ease-out, carStatic2 3s 3s ease-out; */
+    animation: carMoving 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.car-moving2 {
+    /* animation:carMoving2 2s 0.5s ease-in, carStatic 1.5s 3s ease-out; */
+    animation: carMoving2 2s 0.5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes carStatic {
+    0% {
+        transform: translateX(-700px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes carStatic2 {
+    0% {
+        transform: translateX(500px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes carMoving {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateX(500px);
+    }
+}
+
+@keyframes carMoving2 {
+    0% {
+        transform: translateX(-700px);
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateX(3500px);
+    }
+}
+
+@keyframes winRace {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
+
+@media (max-width:1000px) {
+    .leftCarsFooter {
+        width: 400px;
+        bottom: -10px;
+    }
+
+    .rightCarFooter {
+        width: 170px;
+        bottom: -10px;
+        animation: carMoving 1.5s ease-out, winRace 1.5s ease-in;
+        animation-fill-mode: forwards;
+    }
+}
+
+/* ---- end race */

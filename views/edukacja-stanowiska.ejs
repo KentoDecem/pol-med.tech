@@ -1,0 +1,44 @@
+
+<%- include('partials/navigation.ejs', {activePage: 'edukacja'}) %>
+
+<% let stanowisko = stanowiska.lista[selectedId - 1]; %>
+
+<div class="stanowiskaContainer">
+
+    <div class="stanowiskaLeft">
+
+        <div class="bigImg">
+            <img src="/images/edukacja/stanowiska/<%= selectedId %>.1.jpg">
+        </div>
+
+    </div>
+
+
+    <div class="stanowiskaCenter" data-number-of-images="<%= stanowisko.ilosc_zdjec %>">
+        <div class="smallImg">
+
+            <% for (var i = 2; i <= stanowisko.ilosc_zdjec; i++) { %>
+
+                <div class="smallPhoto">
+                    <img src="/images/edukacja/stanowiska/<%= selectedId %>.<%= i %>.jpg">
+                    <div class="imgBackground"></div>
+                </div>
+            <% } %>
+
+        </div>
+    </div>
+
+    <div class="stanowiskaRight">
+        
+        <h2> <%= stanowisko.tytul %></h2>
+        <h3> <%= stanowisko.opis %></h3>
+        
+        <a href="/kontakt" class="itemBuy"><%= stanowiska.kup %></a>
+
+    </div>
+
+
+</div>
+
+
+<%- include('partials/footer.ejs', {activePage: 'kontakt'}) %>

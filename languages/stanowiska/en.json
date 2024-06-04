@@ -1,0 +1,65 @@
+{
+    "kup": "Ask for details",
+    "lista": [ 
+        {
+            "id": 1,
+            "ilosc_zdjec": 5,
+            "tytul": "Injector and Injector Nozzle Testing Kit",
+            "opis": "This is a comprehensive tool for diagnosing and repairing Diesel engine fuel injection systems. It allows for precise testing of the parameters of injectors and injector nozzles, enabling the identification and elimination of faults."
+        },
+        {
+            "id": 2,
+            "ilosc_zdjec": 7,
+            "tytul": "Turbocharger Testing Station",
+            "opis": "This is an advanced device that enables comprehensive assessment and repair of turbochargers. It allows for precise measurement of performance parameters such as rotational speed, boost pressure, sealing, and efficiency. This enables the identification of even minor faults and restoration of the turbocharger to full functionality."
+        },
+        {
+            "id": 3,
+            "ilosc_zdjec": 2,
+            "tytul": "Pneumatic Brake System Control",
+            "opis": "Pneumatic brake system control is a key element ensuring safe and comfortable driving. This system uses compressed air to control brake actuators, ensuring smooth and efficient braking."
+        },
+        {
+            "id": 4,
+            "ilosc_zdjec": 3,
+            "tytul": "Hydraulic Brake System Control Demonstration Kit",
+            "opis": "This kit allows for visualization and understanding of key elements of the brake system, such as the brake pump, brake actuators, brake lines, and brake pads."
+        },
+        {
+            "id": 5,
+            "ilosc_zdjec": 2,
+            "tytul": "PCT Temperature Simulation Kit",
+            "opis": "An advanced tool that enables precise simulation of various temperature profiles across a wide range. It is an ideal solution for testing and validating temperature control systems in various industries."
+        },
+        {
+            "id": 6,
+            "ilosc_zdjec": 2,
+            "tytul": "Vehicle Lighting System",
+            "opis": "A set of lamps and reflectors that provide visibility of the vehicle on the road in low visibility conditions and inform other road users of its presence and maneuvers."
+        },
+        {
+            "id": 7,
+            "ilosc_zdjec": 3,
+            "tytul": "Hydraulic Suspension Control System Demonstration Kit",
+            "opis": "This kit allows for visualization and understanding of key elements of the suspension system, such as the hydraulic pump, hydraulic actuators, hydraulic lines, and shock absorbers."
+        },
+        {
+            "id": 8,
+            "ilosc_zdjec": 2,
+            "tytul": "Injector Testing Kit",
+            "opis": "An essential tool for any mechanic involved in diagnosing and repairing gasoline and diesel engines. This kit allows for precise testing of injector parameters such as efficiency, fuel spray, sealing, and opening/closing time."
+        },
+        {
+            "id": 9,
+            "ilosc_zdjec": 1,
+            "tytul": "Pneumatic Suspension Control System Demonstration Kit",
+            "opis": "This kit allows for visualization and understanding of key elements of the suspension system, such as the air compressor, pneumatic actuators, pneumatic lines, and air springs."
+        },
+        {
+            "id": 10,
+            "ilosc_zdjec": 1,
+            "tytul": "Educational Engine",
+            "opis": "An engine for verifying operating parameters and for learning the construction and implementation of basic curriculum content in the field of engine construction and diagnostics."
+        }
+    ]
+}

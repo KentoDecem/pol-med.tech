@@ -1,0 +1,27 @@
+{
+    "tytul": "Stanowiska dydaktyczno-laboratoryjne",
+    "opis": "To zintegrowane moduły dydaktyczne, które umożliwiają naukę o różnych aspektach technologii samochodowych w praktyczny i angażujący sposób.",
+    "guzik1": "Zobacz ofertę",
+    "guzik2": "Napisz do nas",
+
+    "text_new": "Nowość na rynku",
+    "platforma_h3": "Interaktywna platforma edukacyjna",
+    "platforma_p": "Stanowisko dydaktyczne do pracowni mechatroniki samochodowej zapewnia interaktywną platformę edukacyjną, umożliwiającą uczniom naukę tworzenia mapy pracy silnika. Głównym elementem stanowiska jest Uniwersalny Komputer Sterujący, który umożliwia kontrolę pracy silnika z zapłonem iskrowym oraz elektronicznym wtryskiem paliwa.",
+
+    "sekcja2Tytul": "Nasza firma oferuje",
+    "sekcja2li_1": "<b>Urządzenia i narzędzia kontrolno-pomiarowe:</b> Szeroki wybór wysoce precyzyjnych urządzeń i narzędzi do diagnostyki i serwisu pojazdów.",
+    "sekcja2li_2": "<b>Stanowiska badawcze:</b> Nowoczesne stanowiska badawcze wyposażone w najnowsze technologie, umożliwiające prowadzenie badań i testów różnych układów i podzespołów pojazdów.",
+    "sekcja2li_3": "<b>Stanowiska edukacyjne:</b> Interaktywne stanowiska edukacyjne przeznaczone do nauki budowy, diagnostyki i obsługi pojazdów hybrydowych i elektrycznych.",
+    "sekcja2li_4": "<b>Kursy i szkolenia:</b> Kompleksowe kursy i szkolenia z zakresu diagnostyki pokładowej i obsługi pojazdów hybrydowych i elektrycznych, z uprawnieniami do 1kV.",
+
+    "videoTytul1": "Panel Symulacji Usterek",
+    "videoTytul2": "Procedury<br> diagnostyki silnika",
+    "videoTytul3": "Badania oscyloskopowe",
+    "videoOpis1": "To zaawansowany system umożliwiający generowanie typowych usterek sterowania silnikiem spalinowym dzięki któremu uczniowie nabywają praktyczne umiejętności implementacji procedur diagnostycznych do wykrywania i lokalizacji usterek z wykorzystaniem specjalistycznych urządzeń diagnostycznych.",
+    "videoOpis2": "Stanowisko dydaktyczne umożliwiające realizację procedur diagnostycznych oceny stanu technicznego silnika spalinowego z wykorzystaniem specjalistycznego oprzyrządowania oraz pozwalającego na szybką realizację lokalizacji i weryfikacji usterek.",
+    "videoOpis3": "Stanowisko umożliwia wykorzystanie możliwości uniwersalnego oscyloskopu do weryfikacji parametrów pracy silnika spalinowego. Stanowi to podstawę realizowanych działań w zakresie identyfikacji stanu technicznego silnika spalinowego.",
+    "tytulLista": "Stanowiska demonstracyjno-pomiarowe:",
+    "guzikItem": "Więcej informacji",
+
+    "dostosowujemy": "Oferowane przez nas produkty dostosowujemy do indywidualnych potrzeb i wymagań Zamawiających."
+}

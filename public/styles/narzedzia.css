@@ -1,0 +1,474 @@
+#narzedzia {
+    --hero-orange: #BE330A;
+    --hero-green: #013F3C;
+}
+
+#narzedziaHero {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    min-height: 850px;
+    background-image: url("/images/narzedzia/narzedzia3.jpg");
+    background-attachment: sticky;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: top;
+    /* box-shadow: inset 0 -40px 20px -12px var(--hero-red); */
+
+    display: flex;
+    align-items: center;
+}
+
+#narzedziaHero h1 {
+    margin: 0;
+
+    font-family: var(--font-hero), sans-serif;
+    font-size: 3.5rem;
+    /* color: var(--main-blue); */
+    max-width: 90%;
+}
+
+#narzedziaHero h2 {
+    border: solid 0 var(--hero-green);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.13));
+    border-radius: 5px 15px 15px 5px;
+    border-left-width: 4px;
+    box-shadow: 0 0 10px #00000033;
+    padding: 5px 10px;
+    margin: 0;
+    font-family: var(--font-hero), sans-serif;
+    font-size: 1.7rem;
+    /* color: var(--main-blue); */
+    max-width: 85%;
+}
+
+#narzedziaHero .heroButton1 {
+    background-color: var(--hero-green);
+    border: solid 2px var(--hero-green);
+    box-shadow: 0px 6px 34px -12px var(--hero-green);
+}
+
+.spikes {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    filter: drop-shadow(0 -20px 1px #013f3c88);
+}
+
+@media (max-width: 1200px) {
+
+    #narzedziaHero h2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    #narzedziaHero h1 {
+        font-size: 2.3rem;
+    }
+
+    #narzedziaHero h2 {
+        font-size: 1.3rem;
+    }
+}
+
+#narzedziaOpisContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0px 110px 0px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    background-color: #022020;
+    background: linear-gradient(to bottom, #022020, rgb(255, 255, 255));
+}
+
+#narzedziaOpis {
+    width: 70%;
+    color: white;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#narzedziaOpis h2 {
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+    padding: 15px 45px;
+    border-radius: 20px;
+    border: solid 5px white;
+    border-width: 5px 0px 5px 5px;
+    box-shadow: inset 0 0 50px 11px var(--hero-green), 0 0 1px 1px var(--hero-green);
+    filter: drop-shadow(0 0 5px var(--hero-green)) drop-shadow(0 0 10px var(--hero-green));
+    background-color: var(--hero-green);
+}
+
+#narzedziaOpis h3 {
+    font-family: var(--font-main), sans-serif;
+    color: white;
+    max-width: 1000px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #55555593, rgba(255, 255, 255, 0.285));
+    border: solid 4px white;
+    border-width: 0 0 0 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    #narzedziaOpis {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:850px) {
+    #narzedziaOpis h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #narzedziaOpis h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:750px) {
+    #narzedziaOpis h2 {
+        font-size: 2.2rem;
+    }
+
+    #narzedziaOpis h3 {
+        font-size: 1.2rem;
+    }
+
+    #narzedziaOpis {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:650px) {
+    #narzedziaOpis h2 {
+        font-size: 1.8rem;
+    }
+
+    #narzedziaOpis h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* 2 Sekcja */
+#narzedziaOferta {
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#narzedziaOferta h2 {
+    margin: 0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+    padding: 15px 20px;
+    border: solid 5px white;
+    filter: drop-shadow(0 5px 15px white);
+    border-width: 0 0 5px 0;
+    border-radius: 25%;
+}
+
+#narzedziaOfertaLista {
+    position: relative;
+    z-index: 5;
+    display: flex;
+}
+
+#narzedziaOferta ul {
+    margin: 0;
+    padding: 25px;
+    border-radius: 12px 0px 0px 12px;
+    max-width: 50%;
+    box-sizing: border-box;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    background-color: white;
+    position: relative;
+    z-index: 6;
+}
+
+#narzedziaOferta li {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    /* max-width: 240px; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px;
+    position: relative;
+    border: solid 4px var(--main-blue);
+    border-width: 0 0 0 4px;
+    border-radius: 5px;
+    /* background-color: white; */
+    overflow: hidden;
+
+    transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+#narzedziaOferta li::after {
+    border-radius: 5px;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 300px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(to left, var(--main-blue), var(--hero-green));
+    transition: opacity 0.5s ease, left 0.5s ease;
+}
+
+#narzedziaOferta li:hover {
+    /* background-color: var(--hero-green); */
+    /* background: linear-gradient(to left, var(--main-blue), var(--hero-green)); */
+    color: white;
+    border: solid 4px white;
+    box-shadow: -20px 0 30px rgba(0, 0, 0, 0.342);
+    border-width: 0 0 0 4px;
+    cursor: pointer;
+}
+
+#narzedziaOferta li:hover::after {
+    opacity: 1;
+    left: 0;
+}
+
+#narzedziaOferta li.active {
+    background: linear-gradient(to left, var(--main-blue), var(--hero-green));
+    color: white;
+    border: solid 4px white;
+    box-shadow: -20px 0 30px rgba(0, 0, 0, 0.342);
+    border-width: 0 0 0 4px;
+    animation: liActive 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes liActive {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+#narzedziaOfertaImage {
+    border-radius: 0px 12px 12px 0px;
+    width: 50%;
+    /* background: url("../images/narzedzia/narzedzia4.jpg"); */
+    /* background-color: red; */
+    height: stretch;
+    min-height: 50px;
+    position: relative;
+}
+
+.tools-spikes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.tools-spikes-vertical {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.narzedzia-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:1650px) {
+    .tools-spikes-vertical {
+        display: block;
+    }
+
+    .tools-spikes {
+        display: none;
+    }
+
+    #narzedziaOfertaImage {
+        border-radius: 12px 12px 0px 0px;
+        width: 100%;
+        /* background: url("../images/narzedzia/narzedzia4.jpg"); */
+        height: 500px;
+    }
+
+    #narzedziaOferta ul {
+        max-width: 100%;
+        display: grid;
+        gap: 1.5em;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    #narzedziaOfertaLista {
+        flex-direction: column-reverse;
+    }
+
+    #narzedziaOferta li::after {
+        left: 800px;
+    }
+
+}
+
+
+
+
+
+#narzedziaUslugiContainer {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px 0 125px 0;
+    justify-content: center;
+}
+
+#narzedziaUslugi {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#narzedziaUslugi h2 {
+    margin: 0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--hero-green);
+    font-weight: 500;
+    width: fit-content;
+    max-width: 750px;
+    padding: 30px 40px;
+    border: solid 5px white;
+    box-shadow: 0 5px 15px var(--hero-green);
+    border-width: 5px;
+    border-radius: 25%;
+}
+
+#narzedziaUslugi ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+}
+
+#narzedziaUslugi li {
+    font-family: var(--font-main), sans-serif;
+    color: var(--hero-green);
+    /* max-width: 240px; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px;
+    position: relative;
+    border: solid 4px var(--hero-green);
+    border-width: 0 0 0 4px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(196, 196, 196, 0.307), rgba(255, 255, 255, 0.051));
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#narzedziaUslugi li img {
+    width: 50px;
+}
+
+
+@media (max-width:850px) {
+
+    #narzedziaOferta h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #narzedziaUslugi h2 {
+        font-size: 1.8rem;
+    }
+
+    #narzedziaOferta li {
+        font-size: 1.2rem;
+    }
+
+    #narzedziaUslugi li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:750px) {
+    #narzedziaOferta h2 {
+        font-size: 2.2rem;
+    }
+
+    #olejeOferta li,
+    #olejeOferta2 li,
+    #olejeZaufanie li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:650px) {
+
+    #narzedziaOferta h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:570px) {
+    #narzedziaOferta {
+        width: 90%;
+    }
+}

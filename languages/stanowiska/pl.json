@@ -1,0 +1,65 @@
+{
+    "kup": "Zapytaj o szczegóły",
+    "lista": [
+        {
+            "id": 1,
+            "ilosc_zdjec": 5,
+            "tytul": "Zestaw Testowania Pomp i Pompowtryskiwaczy",
+            "opis": "Jest to kompleksowe narzędzie do diagnostyki i naprawy układów wtryskowych w silnikach Diesla. Umożliwia on dokładne sprawdzenie parametrów pracy pomp i pompowtryskiwaczy, co pozwala na zidentyfikowanie i usunięcie usterek."
+        },
+        {
+            "id": 2,
+            "ilosc_zdjec": 7,
+            "tytul": "Stanowisko Testowania Turbosprężarki",
+            "opis": "To zaawansowane urządzenie, które umożliwia kompleksową ocenę i naprawę turbosprężarek. Pozwala na precyzyjne pomiary parametrów pracy, takich jak prędkość obrotowa, ciśnienie doładowania, szczelność i wydajność. Dzięki temu możliwe jest zidentyfikowanie nawet drobnych usterek i przywrócenie turbosprężarki do pełnej sprawności."
+        },
+        {
+            "id": 3,
+            "ilosc_zdjec": 2,
+            "tytul": "Sterowanie Pneumatycznego Układu Hamulcowego",
+            "opis": "Sterowanie pneumatycznego układu hamulcowego to kluczowy element zapewniający bezpieczną i komfortową jazdę. System ten wykorzystuje sprężone powietrze do sterowania siłownikami hamulców, co zapewnia płynne i efektywne hamowanie."
+        },
+        {
+            "id": 4,
+            "ilosc_zdjec": 3,
+            "tytul": "Zestaw do Demonstracji Sterowania Hydraulicznego Układu Hamulcowego",
+            "opis": "Zestaw ten umożliwia wizualizację i zrozumienie kluczowych elementów układu hamulcowego, takich jak pompa hamulcowa, siłowniki hamulcowe, przewody hamulcowe i klocki hamulcowe."
+        },
+        {
+            "id": 5,
+            "ilosc_zdjec": 2,
+            "tytul": "Zestaw do Symulacji Temperatury PCT",
+            "opis": "Zaawansowane narzędzie, które umożliwia precyzyjną symulację różnych profili temperatury w szerokim zakresie. Jest to idealne rozwiązanie do testowania i walidacji systemów kontroli temperatury w różnych gałęziach przemysłu."
+        },
+        {
+            "id": 6,
+            "ilosc_zdjec": 2,
+            "tytul": "Oświetlenie Pojazdu Samochodowego",
+            "opis": "Zespół lamp i reflektorów, które umożliwiają widoczność pojazdu na drodze w warunkach słabej widoczności oraz informują innych użytkowników drogi o jego obecności i manewrach."
+        },
+        {
+            "id": 7,
+            "ilosc_zdjec": 3,
+            "tytul": "Zestaw do Demonstracji Hydraulicznego Systemu Sterowania Zawieszeniem",
+            "opis": "Zestaw ten umożliwia wizualizację i zrozumienie kluczowych elementów układu zawieszenia, takich jak pompa hydrauliczna, siłowniki hydrauliczne, przewody hydrauliczne i amortyzatory."
+        },
+        {
+            "id": 8,
+            "ilosc_zdjec": 2,
+            "tytul": "Zestaw Testowania Wtryskiwaczy",
+            "opis": "Niezbędne narzędzie dla każdego mechanika, który zajmuje się diagnostyką i naprawą silników benzynowych i wysokoprężnych. Zestaw ten umożliwia precyzyjne sprawdzenie parametrów pracy wtryskiwaczy, takich jak wydajność, rozpylanie paliwa, szczelność i czas otwarcia/zamknięcia."
+        },
+        {
+            "id": 9,
+            "ilosc_zdjec": 1,
+            "tytul": "Zestaw do Demonstracji Pneumatycznego Sterowania Zawieszeniem",
+            "opis": "Zestaw ten umożliwia wizualizację i zrozumienie kluczowych elementów układu zawieszenia, takich jak sprężarka powietrza, siłowniki pneumatyczne, przewody pneumatyczne i miechy powietrzne."
+        },
+        {
+            "id": 10,
+            "ilosc_zdjec": 1,
+            "tytul": "Silnik dydaktyczny",
+            "opis": "Silnik do weryfikacji parametrów pracy oraz do nauki budowy i realizacji podstawowych treści programowych w zakresie budowy i diagnostyki silnika spalinowego."
+        }
+    ]
+}

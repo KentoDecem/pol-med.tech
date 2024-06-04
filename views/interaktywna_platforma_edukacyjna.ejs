@@ -1,0 +1,28 @@
+<%- include('partials/navigation.ejs', {activePage: 'interaktywna_platforma_edukacyjna'}) %>
+
+<div id="IPE-Container">
+    <div id="IPE">
+        <div id="IPE-Images">
+            <span class="IpeBigImg bigImg"><img src="/images/edukacja/interaktywna_platforma/stanowiskoMechatronika.jpg"></span>
+            <span class="IpeBigImg bigImg"><img src="/images/edukacja/interaktywna_platforma/platforma.jpg"></span>
+        </div>
+        <div id="IPE-Text">
+            <h1><%= interaktywna_platforma.platforma_h1 %></h1>
+            <p><img src="/images/edukacja/interaktywna_platforma/computer.png" class="IPE-Icon">
+                <%= interaktywna_platforma.platforma_p %>
+            </p>
+
+            <p><img src="/images/edukacja/interaktywna_platforma/settings.png" class="IPE-Icon">
+                <%= interaktywna_platforma.platforma_p_2 %>
+            </p>
+
+            <p><img src="/images/edukacja/interaktywna_platforma/mechanic.png" class="IPE-Icon mechanic">
+                <%= interaktywna_platforma.platforma_p_3 %>
+            </p>
+
+            <a href="/kontakt" class="itemBuy"><%= interaktywna_platforma.kup %></a>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs', {activePage: 'interaktywna_platforma_edukacyjna'}) %>

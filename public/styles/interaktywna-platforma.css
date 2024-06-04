@@ -1,0 +1,118 @@
+#IPE-Container {
+    padding: 100px 0;
+    width:100%;
+    min-height: 100px;
+    display:flex;
+    justify-content: center;
+}
+
+#IPE {
+    width:80%;
+    min-height: 100px;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+}
+#IPE-Images {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:70px;
+}
+#IPE-Images img {
+    border-radius: 20px;
+    width:30%;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.315) 0 15px 25px;
+}
+
+.IpeBigImg {
+    display:flex;
+}
+.IpeBigImg img {
+    width: 100% !important;
+    background-color: red;
+}
+
+.IpeBigImg.zoomImg img {
+    width: fit-content !important;
+    
+}
+.IpeBigImg.zoomImg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#IPE-Text {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+#IPE h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--main-blue);
+    font-family: var(--font-hero), sans-serif;
+    color: var(--main-blue);
+    padding: 15px 10px;
+    border: solid 5px var(--main-blue);
+    border-width: 0 0 5px 0;
+    border-radius: 15%;
+    font-weight: 500;
+    font-size: 2.8rem;
+    width:fit-content;
+    margin: 0;
+}
+
+#IPE p {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+
+    margin:0;
+    font-size: 1.6em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 450;
+    color: var(--main-blue);
+    padding: 15px 21px;
+    
+    border-width: 0px 0px 0px 4px !important;
+    border-radius: 5px;
+    color: var(--main-blue);
+    border: solid var(--main-blue);
+    background: linear-gradient(to right, #cadefa4d, rgba(255, 255, 255, 0.051));
+}
+
+.IPE-Icon {
+    min-width: 60px !important;
+    width:175px !important;
+    padding: 12px;
+}
+
+.mechanic {
+    width:242px !important
+}
+
+@media(max-width:1000px) {
+    #IPE h1 {
+        font-size: 2rem;
+    }
+
+    .IPE-Icon {
+        min-width: 75px !important;
+        width:75px !important;
+        padding: 12px;
+    }
+
+    #IPE p {
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+}

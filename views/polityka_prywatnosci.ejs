@@ -1,0 +1,92 @@
+<%- include('partials/navigation.ejs', {activePage: 'polityka_prywatnosci'}) %>
+
+<section id="polityka_prywatnosci">
+    <div id="polityka_prywatnosci_container">
+
+        <h1> <%= privacyPolicy.title_h1 %> </h1>
+
+        <!-- check if the privacy policy is legacy or current version. Give information that it is a legacy version. -->
+        <%if (privacyPolicy.update_date != latestPrivacyPolicyUpdate) { %>
+            <h6> (<%- privacyPolicy.legacy %>) </h6>
+        <% } %>
+
+        <% privacyPolicy.sections.forEach((section, index) => { %>
+            <section id="<%= section.id %>">
+                <h2><%- section.h2 %></h2>
+
+                <% if(section.content_p_1) { %>
+                    <p><%- section.content_p_1 %></p>
+                <% } %>
+
+                <% if(section.content_p_2) { %>
+                    <p><%- section.content_p_2 %></p>
+                <% } %>
+
+                <% if(section.content_p_3) { %>
+                    <p><%- section.content_p_3 %></p>
+                <% } %>
+
+                <% if(section.content_h3_1) { %>
+                    <h3><%- section.content_h3_1 %></h3>
+                <% } %>
+
+                <% if(section.content_h3_2) { %>
+                    <h3><%- section.content_h3_2 %></h3>
+                <% } %>
+
+                <% if(section.content_h3_3) { %>
+                    <h3><%- section.content_h3_3 %></h3>
+                <% } %>
+
+                <% if(section.content_h3_4) { %>
+                    <h3><%- section.content_h3_4 %></h3>
+                <% } %>
+
+                <% if(section.content_h3_5) { %>
+                    <h3><%- section.content_h3_5 %></h3>
+                <% } %>
+
+                <% if(section.content_h3_5) { %>
+                    <h3><%- section.content_h3_6 %></h3>
+                <% } %>
+            </section>
+            <% if (index !== privacyPolicy.sections.length - 1 ) { %>
+                <hr>
+            <% } %>
+        <% }); %>
+
+        <!-- Download -->
+        <% if (privacyPolicy.download) { %>
+            <div class="downloadPrivacyPolicy">
+                <%- privacyPolicy.download %><img src="/images/privacy_policy/pdf.png" class="privacyPolicyIcon">
+            </div>
+        <% } %>
+
+        <div id="lastUpdatePrivacyPolicy">
+            <% if(privacyPolicy.last_updated) { %>
+                <h4> <%- privacyPolicy.last_updated %> </h4>
+            <% } %>
+
+            <!-- Updates List -->
+            <div class="UpdatesList">
+                <div class="UpdateListInner">
+                    <% for (var i = 0; i < privacyPolicyList.length; i++) { %>
+                        <% if (privacyPolicyList[i] === privacyPolicy.update_date) { %>
+                            <h5 class="currentChoiceDate"><%= privacyPolicyList[i] %></h5>
+                        <% } else { %>
+                            <h5><%= privacyPolicyList[i] %></h5>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+
+            <!-- hidden form and submit -->
+            <form id="privacyPolicyForm" method="GET" style="display: none;">
+                <input type="submit" style="display:none">
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<%- include('partials/footer.ejs', {activePage: 'polityka_prywatnosci'}) %>

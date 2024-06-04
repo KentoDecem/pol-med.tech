@@ -1,0 +1,69 @@
+<%- include('partials/navigation.ejs', {activePage: 'home'}) %>
+
+<!-- different language welcome message -->
+<div id="index-hero">
+    <video loop muted playsinline autoplay preload="auto">
+
+        <source src="videos/polmed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="index-title">
+        <div class="index-title-text">
+            <h1><%= index.tytul %></h1>
+            <hr class="index-hr">
+            <h2><%- index.opis %></h2>
+        </div>
+        <a href="#nasza_oferta" class="fancy-arrow-container">
+            <div class="fancy-arrow"></div>
+            <div class="fancy-arrow"></div>
+            <div class="fancy-arrow"></div>  
+        </a>
+        
+    </div>
+
+    <img src="images/index/polygon.svg" class="polygon">
+</div>
+
+<div id="nasza_oferta">
+    <div id="nasza_oferta-container">
+        <h2><%= index.sekcja2Tytul %></h2>
+        <div id="nasza_oferta-box">
+            <div id="is-edukacja">
+                <img src="images/index/edukacja.png">
+                <div class="is-content">
+                    <h3><%= index.sekcja2h3_1 %></h3>
+                    <h4><%= index.sekcja2h4_1 %></h4>
+                    <div class="isc-bottom">
+                        <a href="/edukacja"><%= index.sekcja2button %></a>
+                        <img src="images/index/car-service.png">
+                    </div>
+                </div>
+            </div>
+            <div id="is-oleje">
+                <img src="images/index/oleje.png">
+                <div class="is-content">
+                    <h3><%= index.sekcja2h3_2 %></h3>
+                    <h4><%= index.sekcja2h4_2 %></h4>
+                    <div class="isc-bottom">
+                        <a href="/oleje"><%= index.sekcja2button %></a>
+                        <img src="images/index/oil-tank.png">
+                    </div>
+                </div>
+            </div>
+            <div id="is-narzedzia">
+                <img src="images/index/narzedzia.png">
+                <div class="is-content">
+                    <h3><%= index.sekcja2h3_3 %></h3>
+                    <h4><%= index.sekcja2h4_3 %></h4>
+                    <div class="isc-bottom">
+                        <a href="/narzedzia"><%= index.sekcja2button %></a>
+                        <img src="images/index/tools.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs', {activePage: 'home'}) %>

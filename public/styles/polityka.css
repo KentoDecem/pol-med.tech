@@ -1,0 +1,351 @@
+#polityka_prywatnosci {
+
+margin-top: 60px; /* distance from main content */
+margin-bottom:60px;
+width:100%;
+ display:flex;
+ justify-content: center;
+ transition: margin-bottom 0.5s ease-out;
+
+}
+
+#polityka_prywatnosci_container {
+    width:60%;
+}
+
+#polityka_prywatnosci h1 {
+    margin-top:75px;
+    margin-bottom:75px;
+    text-align: center;
+    font-family: var(--font-main), sans-serif;
+    font-size: var(--size-privacy-policy);
+    background: linear-gradient(to left, #1c375b, #d2544a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#polityka_prywatnosci h2 {
+    font-family: var(--font-main), sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#polityka_prywatnosci h3 {
+    font-family: var(--font-main), sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#polityka_prywatnosci p {
+    font-family: var(--font-main), sans-serif;
+    line-height:35px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#polityka_prywatnosci hr {
+    border-radius: 20px;
+    height:5px;
+    border: 10px double var(--main-blue);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#polityka_prywatnosci a {
+    color: var(--main-blue);
+    text-decoration: none;
+    position: relative;
+    transition: letter-spacing 0.3s;
+}
+
+#polityka_prywatnosci a::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width:98%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--main-blue);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+#polityka_prywatnosci a:hover::after {
+    transform: scaleX(1);
+}
+
+
+#polityka_prywatnosci a:hover {
+    letter-spacing: 0.01em;
+}
+
+
+#polityka_prywatnosci h4 {
+    font-family: var(--font-main), sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 50px;
+}
+
+#polityka_prywatnosci h5 {
+    font-family: var(--font-main), sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin:0;
+}
+
+#lastUpdatePrivacyPolicy {
+    position:relative;
+}
+
+#lastUpdatePrivacyPolicy .UpdatesList {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px var(--main-blue);
+    flex-direction: column;
+    display:flex;
+    position:absolute;
+    bottom:-140px;
+    opacity:0;
+    pointer-events: none;
+}
+
+#lastUpdatePrivacyPolicy .UpdateListInner {
+    overflow-x:scroll;
+    background-color: white;
+    width:fit-content;
+    flex-direction: column;
+    display:flex;
+    border-radius: 20px;
+    padding:15px;
+    gap:10px;
+    position:relative;
+    max-height: 120px;
+    scrollbar-width: none;
+}
+
+#lastUpdatePrivacyPolicy .UpdatesList h5 {
+    text-align: left;
+    border: solid 2px var(--main-blue);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: border-radius 0.3s;
+    cursor: pointer;
+}
+
+#lastUpdatePrivacyPolicy .UpdatesList h5:hover {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#polityka_prywatnosci #lastUpdatePrivacyPolicy {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top:100px;
+    margin-bottom:60px;
+    text-align: end;
+    font-family: var(--font-main), sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#polityka_prywatnosci #lastUpdatePrivacyPolicy span {
+    border: solid 2px var(--main-blue);
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: padding 0.3s;
+}
+
+#polityka_prywatnosci #lastUpdatePrivacyPolicy span:hover {
+    cursor: pointer;
+    padding:15px 20px;
+}
+
+/* last element of .UpdateList h5 slightly green
+#lastUpdatePrivacyPolicy .UpdatesList h5:last-child::after {
+    content: "✓";
+    padding-left:5px;
+} */
+
+.currentChoiceDate {
+    border-radius: 20px !important;
+}
+
+#polityka_prywatnosci h6, #polityka_prywatnosci h6 a {
+    font-family: var(--font-main), sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-red);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin:100px 0;
+}
+
+#polityka_prywatnosci h6 {
+    width: fit-content;
+    border: var(--main-red) dotted;
+    border-width: 3px 0;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+/* section appear */
+
+#polityka_prywatnosci h1, #informacje_polmed, #dane_osobowe, #przetwarzanie_danych, #statystyki, #utrzymanie_serwisu, #prawa_uzytkownika, #zmiany_polityki_prywatnosci {
+    transform: translateY(100px);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.sectionAppear {
+    animation:sectionAppear 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sectionAppear {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#polityka_prywatnosci h2 {
+    display:flex;
+    align-items: center;
+}
+
+#polityka_prywatnosci .privacyPolicyIcon {
+    margin-left:15px;
+    margin-right:15px;
+    height:45px;
+    width: auto;
+
+}
+
+.downloadPrivacyPolicy {
+    width: fit-content;
+    display:flex;
+    align-items: center;
+    font-family: var(--font-main), sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-red);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin:100px 0 0 0;
+    transition: scale 0.3s;
+}
+
+.downloadPrivacyPolicy:hover {
+    cursor: pointer;
+    scale:1.1;
+}
+
+@media print {
+    nav, footer, .downloadPrivacyPolicy {
+        display:none;
+    }
+
+    #polityka_prywatnosci hr {
+        border-radius: 20px;
+        height:1px;
+        opacity:0;
+        border: 1px double var(--main-blue);
+        page-break-before: always;
+    }
+
+    #polityka_prywatnosci h1 {
+        color: var(--main-blue);
+    }
+
+    #polityka_prywatnosci h1::after {
+        content: "Pol-Med";
+        display: block;
+    }
+
+    #polityka_prywatnosci h1, #informacje_polmed, #dane_osobowe, #przetwarzanie_danych, #statystyki, #utrzymanie_serwisu, #prawa_uzytkownika, #zmiany_polityki_prywatnosci {
+        transform: translateY(0);
+        opacity: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media (max-width:1600px) {
+    #polityka_prywatnosci_container {
+        width:80%;
+    }
+}
+
+@media (max-width:600px) {
+    #polityka_prywatnosci_container {
+        width:85%;
+    }
+
+    #polityka_prywatnosci h1 {
+        font-size: 36px;
+    }
+
+    #polityka_prywatnosci h2 {
+        font-size: 26px;
+    }
+
+    #polityka_prywatnosci h3 {
+        font-size: 16px;
+    }
+
+
+    #polityka_prywatnosci h4 {
+        font-size: 16px;
+    }
+
+    #polityka_prywatnosci h5 {
+        font-size: 15px;
+    }
+
+    #polityka_prywatnosci p {
+        line-height:35px;
+        font-size: 18px;
+    }
+
+    #polityka_prywatnosci hr {
+        border-radius: 20px;
+        height:4px;
+        border: 8px double var(--main-blue);
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #polityka_prywatnosci h6, #polityka_prywatnosci h6 a {
+    font-family: var(--font-main), sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-red);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin:100px 0;
+}
+}
+
+
+.politykaAddMargin {
+    margin-bottom: 200px !important;
+}

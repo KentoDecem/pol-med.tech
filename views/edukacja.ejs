@@ -1,0 +1,150 @@
+<%- include('partials/navigation.ejs', {activePage: 'edukacja'}) %>
+
+<style>
+    footer {
+        box-shadow: 0px -2px 0px var(--main-blue);
+        filter: none;
+    }
+</style>
+
+<section id="edukacja">
+    <div id="edukacjaHeroContainer">
+        <div id="edukacjaHero">
+            <div class="heroLeft">
+
+                <div class="heroText">
+                    <h1><%= edukacja.tytul %></h1>
+                    <h2><%= edukacja.opis %></h2>
+                    
+                    <div id="heroButtons">
+                        <button class="heroButton1"><%= edukacja.guzik1 %></button>
+                        <button class="heroButton2"><%= edukacja.guzik2 %></button>
+                    </div>
+                </div>
+
+                <div class="heroForm">
+                    <input type="text" placeholder="Imię i nazwisko" class="heroInput">
+                    <input type="text" placeholder="Email" class="heroInput">
+                    <button class="heroButton3">Wyslij</button>
+                </div>
+
+            </div>
+
+            <img src="/images/edukacja/fg.png" class="fg">
+
+            <div class="custom-shape-divider-bottom-1713969268">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="edukacjaListaContainer">
+        <div id="edukacjaLista">
+            <h2><%= edukacja.sekcja2Tytul %></h2>
+            <ul>
+                <li><%- edukacja.sekcja2li_1 %></li>
+                <li><%- edukacja.sekcja2li_2 %></li>
+                <li><%- edukacja.sekcja2li_3 %></li>
+                <li><%- edukacja.sekcja2li_4 %></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+
+        <section id="ofertaMechatronikaContainer">
+            <div id="ofertaMechatronika">
+                <h5 class="text-new"><%= edukacja.text_new%></h5>
+                <a class="imgPlatformaA" href="/edukacja/interaktywna_platforma_edukacyjna"><img src="images/edukacja/interaktywna_platforma/stanowiskoMechatronika.jpg"></a>
+                <div id="ofertaMechatronikaText">
+                    <h3><%= edukacja.platforma_h3%></h3>
+                    <p><%= edukacja.platforma_p%></p>
+                    <a href="/edukacja/interaktywna_platforma_edukacyjna"><%= edukacja.guzikItem %></a>
+                </div>
+            </div>
+        </section>
+
+        <div id="videoPresentationContainer">
+            <div class="custom-shape-divider-top-1714030339">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div id="videoPresentation">
+                <div id="panel_symulacji_usterek">
+                    <iframe class="card1 ytVideo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/oOiXQDaDouw?si=2cIdPL_K6nHYGzsT&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div>
+                        <span><h3><%- edukacja.videoTytul1 %></h3><img class="videoIcon" src="/images/edukacja/fault.png"></span>
+                        <h4><%- edukacja.videoOpis1 %></h4>
+                    </div>
+                </div>
+
+                <div id="procedury_diagnostyki_silnika">
+                    <div>
+                        <span><h3><%- edukacja.videoTytul2 %></h3><img class="videoIcon" src="/images/edukacja/diagnostic.png"></span>
+                        <h4><%- edukacja.videoOpis2 %></h4>
+                    </div>
+                    <iframe class="card2 ytVideo cardUnactiveEarly" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/-lltFnhZlT0?si=QcgWmBxbtpyDVSbu&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div>
+                    <iframe class="card3 ytVideo cardUnactiveEarly" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/edlhrt-Ep-E?si=8gJdUgfBUNcTAOiA&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div>
+                        <span><h3><%- edukacja.videoTytul3 %></h3><img class="videoIcon" src="/images/edukacja/oscilloscope.png"></span>
+                        <h4><%- edukacja.videoOpis3 %></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-shape-divider-bottom-1714035220">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <section id="oferta">
+            <div class="ofertaBox">
+
+                <div class="ofertaTitle">
+                    <h2><%= edukacja.tytulLista %></h2>
+                </div>
+                
+                <div class="ofertaItems">
+
+                    <% stanowiska.lista.forEach(function(stanowisko, index) { %>
+                        <div class="item">
+                            <div class="itemText">
+                                <h3><%= stanowisko.tytul %></h3>
+                                <h4><%= stanowisko.opis %></h4>
+                                <a href="/edukacja/stanowisko/<%= index + 1 %>" class="itemLink"><%= edukacja.guzikItem %> <img src="/images/edukacja/arrow.png"></a>
+                            </div>
+                            <div class="itemImage">
+                                <img src="/images/edukacja/stanowiska/transparent-<%= index + 1 %>.png" class="itemImageTransparent"> 
+                                <img src="/images/edukacja/stanowiska/hover-<%= index + 1 %>.png" class="itemImageHover">
+                            </div>
+                        </div>
+                    <% }); %>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+        <div id="edukacjaDostosowujemyContainer">
+            <div id="edukacjaDostosowujemy">
+                <h3><%= edukacja.dostosowujemy %></h3>
+            </div>
+        </div>
+        
+    </main>
+</section>
+
+<%- include('partials/footer.ejs', {activePage: 'edukacja'}) %>

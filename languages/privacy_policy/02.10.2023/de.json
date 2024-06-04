@@ -1,0 +1,52 @@
+{
+  "title_h1": "Datenschutzrichtlinie",
+  "sections": [
+    {
+      "id": "informacje_polmed",
+      "h2": "Informationen zum Datenschutzbeauftragten",
+      "content_p_1": "Der Datenverantwortliche ist:",
+      "content_h3_1": "Firma: P.P.H.U. \"Pol-Med\" Sp. z o.o.",
+      "content_h3_2": "Adresse: <a href=\"https: //maps.app.goo.gl/t8s2ppjCwsCvdeTM7\" target=\"_blank\">ul. Leśna 38, 86-031 Osielsko</a>",
+      "content_h3_3": "NIP: PL9671167341</h3><h3>REGON: 09314084600000</h3><h3>KRS: 0000166787",
+      "content_h3_4": "E-Mail-Adresse: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>",
+      "content_h3_5": "Telefon: <a href=\"tel:+48338223333\">+48 33 822 33 33</a>"
+    },
+    {
+      "id": "dane_osobowe",
+      "h2": "Personenbezogene Daten",
+      "content_p_1": "Wir sammeln und verarbeiten personenbezogene Daten von Benutzern gemäß der Datenschutz-Grundverordnung (DSGVO).",
+      "content_p_2": "Wir sammeln keine personenbezogenen Daten auf unserer Website ohne ausdrückliche Zustimmung des Benutzers.",
+      "content_p_3": "Unsere Website verfügt über ein SSL-Zertifikat, das eine verschlüsselte Übertragung von Informationen gewährleistet."
+    },
+    {
+      "id": "przetwarzanie_danych",
+      "h2": "Zweck und Umfang der Datenverarbeitung",
+      "content_p_1": "<p>Wenn ein Benutzer uns freiwillig seine personenbezogenen Daten zur Verfügung stellt (z.B. im <a href=\"https: //pol-med.tech/formularz_kontaktowy\" target=\"_blank\">Kontaktformular</a>), werden wir sie ausschließlich für den zum Zeitpunkt der Erhebung festgelegten Zweck verarbeiten.",
+      "content_p_2": "Personenbezogene Daten werden ohne Zustimmung des Benutzers nicht an Dritte weitergegeben oder zu Marketingzwecken verwendet."
+    },
+    {
+      "id": "statystyki",
+      "h2": "Tracking-Technologien",
+      "content_p_1": "Wir verwenden Tools wie Google Analytics zur Analyse des Datenverkehrs ausschließlich zu statistischen Zwecken, um die Qualität unserer Dienstleistungen zu verbessern."
+    },
+    {
+      "id": "utrzymanie_serwisu",
+      "h2": "Wartung der Website",
+      "content_p_1": "Unsere Website wird von der Firma <a href=\"https: //home.pl/\" target=\"_blank\">Home.pl</a> betrieben, die einen hohen Sicherheitsstandard gewährleistet."
+    },
+    {
+      "id": "prawa_uzytkownika",
+      "h2": "Benutzerrechte",
+      "content_p_1": "Benutzer haben gemäß der DSGVO Rechte wie Zugang, Berichtigung, Löschung oder Einschränkung der Verarbeitung personenbezogener Daten. Bei Fragen kontaktieren Sie uns bitte unter: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>."
+    },
+    {
+      "id": "zmiany_polityki_prywatnosci",
+      "h2": "Änderungen der Datenschutzrichtlinie",
+      "content_p_1": "Wir behalten uns das Recht vor, die Datenschutzrichtlinie zur Anpassung an gesetzliche Vorschriften zu aktualisieren. Besuchen Sie <a href=\"https: //pol-med.tech/polityka_prywatnosci\" target=\"_blank\">https://pol-med.tech/polityka_prywatnosci</a>, um die aktuelle Version einzusehen."
+    }
+  ],
+  "update_date": "02.10.2023",
+  "last_updated": "Datenaktualisierung: <span>02.10.2023 <img src='/images/navigation/arrow.png' class='arrow'> </span>",
+  "legacy": "Diese Version der Datenschutzrichtlinie ist veraltet. Um die aktuelle Version der Datenschutzrichtlinie einzusehen, besuchen Sie bitte die Website: <a href=\"https: //pol-med.tech/polityka_prywatnosci\">https://pol-med.tech/polityka_prywatnosci</a>",
+  "download": "PDF herunterladen"
+}

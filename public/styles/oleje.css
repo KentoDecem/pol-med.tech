@@ -1,0 +1,672 @@
+#oleje-hero {
+    --hero-red: #2a363c;
+    position:relative;
+    top:0;
+    left:0;
+    height:90vh;
+    min-height: 850px;
+    width:100%;
+    background-image: url('../images/oleje/oleje5compressed.jpg');
+    background-size: cover;
+    background-position: top;
+    box-shadow: inset 0 -40px 20px -12px var(--hero-red);
+
+    display:flex;
+    align-items: center;
+}
+
+#oleje-hero h1 {
+    margin:0;
+    text-shadow: 1px 1px 2px var(--hero-red);
+    font-family: var(--font-hero), sans-serif;
+    font-size: 3.5rem;
+    /* color: var(--main-blue); */
+    max-width: 90%;
+}
+
+#oleje-hero h2 {
+    border: solid 0 var(--hero-red);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.274));
+    border-radius: 5px 15px 15px 5px;
+    border-left-width: 4px;
+    box-shadow: 0 0 10px #00000033;
+    padding: 5px 10px;
+    margin:0;
+    font-family: var(--font-hero), sans-serif;
+    font-size: 1.7rem;
+    /* color: var(--main-blue); */
+    max-width:85%;
+}
+
+#oleje-hero .heroButton1 {
+    background-color: var(--hero-red);
+    border: solid 2px var(--hero-red);
+    box-shadow: 0px 6px 34px -12px var(--hero-red);
+}
+
+#oleje-hero .heroButton2 {
+    background-color: rgba(110, 138, 147, 0.577);
+    border: solid 3px white;
+    box-shadow: 0px 6px 34px 2px #6e8a93;
+}
+
+.custom-shape-divider-bottom-1713942495 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713942495 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.custom-shape-divider-bottom-1713942495 .shape-fill {
+    fill: white;
+}
+
+#redcert {
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:200px;
+
+    animation: redcert 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes redcert {
+    0% {
+        opacity:0;
+        scale:0;
+    }
+    100% {
+        opacty:0.9;
+    }
+}
+
+@media (max-width:900px) {
+    #redcert {
+        width:150px;
+    }
+}
+
+/* reszta responsywności zapewniona przez edukacja.css */
+
+@media (max-width: 1200px) {
+
+    #oleje-hero h2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    #oleje-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    #oleje-hero h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Sekcja 2  Lista*/
+/* --------------------------------- */
+
+
+#olejeListaContainer {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 110px 0px 110px 0px;
+    background-color: white;
+}
+
+#olejeLista {
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    gap:70px;
+}
+
+/* Sekcja 2 i 3 */
+#olejeLista h2, #olejeOferta h2, #olejeOferta2 h2, #olejeZaufanie h2  {
+    margin:0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main-blue);
+    width:fit-content;
+    padding: 15px 20px;
+    border: solid 5px var(--main-blue);
+    border-width: 0 0 5px 0;
+    border-radius: 25%;
+}
+#olejeLista h3 {
+    margin:0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    background-color: var(--main-blue);
+    border: solid 5px #25558e9e;
+    box-shadow: 0 15px 15px rgba(163, 172, 207, 0.573);
+    border-radius: 12px;
+    color:white;
+    padding: 20px 45px;
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+
+    transform: translateX(-1500px); 
+}
+
+#olejeListaBox {
+    display:flex;
+    gap:45px;
+    flex-direction: column;
+    width:fit-content;
+}
+
+#olejeListaBox img {
+    width: 45px;
+}
+#olejeListaBox img.receiver {
+    width:55px;
+}
+
+#olejeListaBox span {
+    display: flex;
+    gap:45px;
+    width:100%;
+    justify-content: space-between;
+}
+
+#olejeListaBox span h3 {
+    padding: 15px 90px;
+}
+
+
+.sekcja2h3 {
+    transform: translateX(-1500px);
+    animation: sekcja2h3 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* animacje dla różnych sekcji */
+@keyframes sekcja2h3 {
+    0% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media(max-width:1000px) {
+
+    #olejeListaBox h3 {
+        max-width: 500px;
+    }
+    #olejeListaBox span {
+        flex-direction: column;
+        width:fit-content;
+    }
+}
+
+@media(max-width:500px) {
+
+    #olejeListaBox h3 {
+        max-width: 250px !important;
+    }
+    #olejeListaBox span {
+        flex-direction: column;
+        max-width: 250px !important;
+    }
+}
+
+
+/* Sekcja 3  Oferta Obejmuje*/
+/* --------------------------------- */
+
+.custom-shape-divider-top-1713940254 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1713940254 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1713940254 .shape-fill {
+    fill: white; /* Zmień na dowolny kolor, który chcesz użyć */
+}
+
+
+
+.custom-shape-divider-bottom-1713940155 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713940155 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1713940155 .shape-fill {
+    fill: white; /* Zmień na dowolny kolor, który chcesz użyć */
+}
+
+
+#olejeOfertaContainer {
+    position:relative;
+    width:100%;
+    padding: 150px 0px 240px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../images/oleje/olej-bg.png');
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+#olejeOfertaContainer::before {
+    top:0;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    content: "";
+    z-index: -1;
+    background-image: url('../images/oleje/olej-bg.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+/* For broken background attachment */
+@media (max-width: 767px) {
+    #olejeOfertaContainer {
+        background-attachment: scroll;
+    }
+}
+
+#olejeOferta {
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    gap:70px;
+}
+
+#olejeOferta h2 {
+    color:white;
+    border-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+#olejeOferta ul {
+    margin: 0;
+    padding:0;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+#olejeOferta li {
+    font-family: var(--font-main), sans-serif;
+    color: white;
+    max-width: 1000px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    list-style: none;
+    margin:0;
+    padding: 15px 21px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.307), rgba(255, 255, 255, 0.051));
+    border: solid white;
+    border-width: 0px 0px 0px 4px;
+    border-radius: 5px;
+
+    transform: translateX(-1500px);
+}
+
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #olejeOferta li {
+        -webkit-backdrop-filter: blur(1em);
+        backdrop-filter: blur(1em);
+    }
+}
+
+/* Sekcja 4  Posiadamy również*/
+/* --------------------------------- */
+
+#olejeOferta2Container {
+    width:100%;
+    padding: 10px 0px 110px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#olejeOferta2 {
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    gap:70px;
+}
+
+/* Sekcja 6 i 4 */
+#olejeOferta2 ul, #olejeZaufanie ul {
+    margin: 0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+/* Sekcja 4 i 6 */
+#olejeOferta2 li, #olejeZaufanie li {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-blue);
+    max-width: 1000px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    list-style: none;
+    margin:0;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #e6e6e6c8, rgba(0, 0, 0, 0));
+    border: solid 4px var(--main-blue);
+    border-width: 0 0 0 4px;
+    border-radius: 5px;
+
+    transform: translateX(-1500px);
+}
+
+
+
+/* Sekcja 5  Firma świadczy usługi */
+/* --------------------------------- */
+.custom-shape-divider-top-1713942830 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1713942830 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1713942830 .shape-fill {
+    fill: white;
+}
+
+
+
+.custom-shape-divider-bottom-1713942765 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713942765 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.custom-shape-divider-bottom-1713942765 .shape-fill {
+    fill: var(--main-blue);
+}
+
+
+#olejeUslugiContainer {
+    width:100%;
+    padding: 160px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+#olejeUslugiContainer::after {
+    top:0;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    content: "";
+    z-index: -2;
+    background-image: url('../images/oleje/uslugi-compressed.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+#olejeUslugiContainer::before {
+    position:absolute;
+    width:100%;
+    height:100%;
+    content: "";
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+    opacity:0.3;
+    filter:blur(5px)
+}
+
+/* For broken background attachment */
+/* @media (max-width: 767px) {
+    #olejeUslugiContainer {
+        background-attachment: scroll;
+    }
+
+    #olejeUslugiContainer::before {
+        position:absolute;
+        width:100%;
+        height:100%;
+        content: "";
+        z-index: -1;
+        background-color: rgb(255, 255, 255);
+        opacity:0.5;
+        filter:blur(5px)
+    }
+} */
+
+#olejeUslugi {
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    gap:70px;
+    position:relative;
+    z-index: 5;
+}
+
+#olejeUslugi h2  {
+    margin:0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main-blue);
+    width:fit-content;
+    padding: 15px 45px;
+    border-radius: 20px;
+    border: solid 5px #25558e9e;
+    box-shadow: 0 15px 15px rgba(51, 63, 110, 0.573);
+}
+
+#olejeUslugi div {
+    background-color: rgba(255, 255, 255, 0.862);
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 7px double white;
+    gap:25px;
+    max-width: 1000px;
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #olejeUslugi div {
+        background-color: rgba(255, 255, 255, 0.473);
+        -webkit-backdrop-filter: brightness(3) blur(1em);
+        backdrop-filter: brightness(3) blur(1em);
+    }
+}
+
+#olejeUslugi h3 {
+    box-sizing: border-box;
+    max-width: 85%;
+    margin:0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 2.1rem;
+    font-weight: 550;
+    color: var(--main-blue);
+    width: fit-content;
+    padding: 17px 45px;
+    border-radius: 20px;
+    border: dashed 4px var(--main-blue);
+    display:inline-flex;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+}
+
+#olejeUslugi h4 {
+    margin:0;
+    font-family: var(--font-main), sans-serif;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--main-blue)
+}
+
+
+#olejeUslugi img {
+    width: 60px;
+}
+
+
+/* Ogólna responsywność */
+
+@media (max-width:850px) {
+    #olejeLista h2, #olejeOferta h2, #olejeOferta2 h2, #olejeUslugi h2, #olejeZaufanie h2  {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #olejeLista h3, #olejeUslugi h3 {
+        font-size: 1.6rem;
+    }
+    #olejeListaBox h3 {
+        max-width: 400px;
+    }
+
+    #olejeOferta li, #olejeOferta2 li, #olejeZaufanie li {
+        font-size: 1.7rem;
+    }
+
+    #olejeUslugi h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:750px) {
+    #olejeLista h2, #olejeOferta h2, #olejeOferta2 h2, #olejeUslugi h2, #olejeZaufanie h2  {
+        font-size: 2.2rem;
+    }
+
+    #olejeLista h3, #olejeUslugi h3 {
+        font-size: 1.4rem;
+    }
+    #olejeListaBox h3 {
+        max-width: 400px;
+    }
+
+    #olejeOferta li, #olejeOferta2 li, #olejeZaufanie li {
+        font-size: 1.2rem;
+    }
+
+    #olejeUslugi h4 {
+        font-size: 1.1rem;
+    }
+    #olejeUslugi h3 {
+        flex-direction: column;
+
+    }
+
+    #olejeUslugi div {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:650px) {
+    #olejeLista h2, #olejeOferta h2, #olejeOferta2 h2, #olejeUslugi h2, #olejeZaufanie h2  {
+        font-size: 1.8rem;
+    }
+
+    #olejeLista h3, #olejeUslugi h3 {
+        font-size: 1.3rem;
+    }
+    #olejeListaBox h3 {
+        max-width: 400px;
+    }
+
+    #olejeOferta li, #olejeOferta2 li, #olejeZaufanie li {
+        font-size: 1.1rem;
+    }
+
+    #olejeUslugi h4 {
+        font-size: 1.1rem;
+    }
+    #olejeUslugi h3 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:570px) {
+    #olejeLista, #olejeOferta, #olejeOferta2, #olejeUslugi, #olejeZaufanie {
+        width:90%;
+    }
+}

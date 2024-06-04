@@ -1,0 +1,9 @@
+
+{
+    "text_new": "New on the market",
+    "kup": "Ask for details",
+    "platforma_h1": "Interactive educational platform",
+    "platforma_p": "Educational workstation for automotive mechatronics provides an interactive educational platform enabling students to learn engine mapping. The main element of the workstation is the Universal Control Computer, which allows controlling the engine operation with spark ignition and electronic fuel injection.",
+    "platforma_p_2": "Students have the opportunity to experiment with various settings and configurations, as well as to create engine mapping. By analyzing input data from sensors such as position, temperature, or manifold pressure, and proper controller programming, they can create engine maps, adjusting its operation to different operating conditions.",
+    "platforma_p_3": "Creating engine maps is not only a programming skill but also a deeper understanding of engine operation mechanisms and the influence of various parameters on its efficiency and performance. Through practical exercises on the educational workstation, students acquire necessary knowledge and skills in diagnostics, repair, and optimization of engine operation, preparing them for the profession of automotive electromechanics or mechatronics."
+}

@@ -1,0 +1,51 @@
+<%- include('partials/navigation.ejs', {activePage: 'o_nas'}) %>
+
+<div id="ON-HeroContainer">
+    <div id="ON-Hero">
+        <h1><%= o_nas.tytul %> <span id="waving-hand">👋</span></h1>
+    </div>
+
+    <img src="images/o_nas/polygon1.svg" class="ON-Blob">
+</div>
+
+<div id="ON-WprowadzenieContainer">
+    <div id="ON-Wprowadzenie">
+        <h2><%= o_nas.sekcja2Tytul %></h2>
+
+        <p><%- o_nas.sekcja2p_1 %></p>
+        <p><%- o_nas.sekcja2p_2 %></p>
+        <p> <%- o_nas.sekcja2p_3 %> </p>
+    </div> 
+</div>
+
+<div id="ON-MisjaContainer">
+    <div id="ON-Misja">
+        <div class="ON-Div MisjaFirmy">
+            <h2><%= o_nas.sekcja3Tytul %><img src="images/o_nas/goal.png"></h2>
+            <p><%= o_nas.sekcja3Opis %></p>
+        </div>
+
+        <div class="ON-Div">
+            <h2><%= o_nas.sekcja4Tytul %><img src="images/o_nas/honesty.png"></h2>
+            <ul>
+                <li><%= o_nas.sekcja4li_1 %></li>
+                <li><%= o_nas.sekcja4li_2 %></li>
+                <li><%= o_nas.sekcja4li_3 %></li>
+                <li><%= o_nas.sekcja4li_4 %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="ON-LokalizacjaContainer">
+
+    <div id="ON-Lokalizacja">
+        <div id="ON-LokalizacjaInside">
+            <h2><%= o_nas.sekcja5Tytul %></h2>
+            <h3><%= o_nas.sekcja5Opis %></h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d302.46604608683543!2d18.082092471321893!3d53.18150894161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470311d440a0005d%3A0x3970c9b600b2014!2sP.P.H.U.%20Pol%20-%20Med%20Sp.%20z%20o.o.!5e1!3m2!1spl!2spl!4v1714225278473!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs', {activePage: 'o_nas'}) %>

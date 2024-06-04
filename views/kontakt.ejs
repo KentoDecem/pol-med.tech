@@ -1,0 +1,48 @@
+<%- include('partials/navigation.ejs', {activePage: 'kontakt'}) %>
+
+<section id="kontakt">
+
+    <!-- <h1>Skontaktuj się z nami</h1>
+
+    <h2>Dane kontaktowe</h2>
+
+    <ul>
+        <li><strong>Adres:</strong> ul. Przykładowa 12, 00-001 Warszawa</li>
+        <li><strong>Telefon:</strong> +48 123 456 789</li>
+        <li><strong>Email:</strong> kontakt@przykladowa.pl</li>
+    </ul>
+
+    <ul>
+        <li>Adres: ul. Leśna 38, 86-031 Osielsko</li>
+        <li>NIP: PL9671167341</li>
+        <li>REGON: 093140846</li>
+        <li>KRS: 0000166787</li>
+        <li>Adres e-mail: <a href="mailto:biuro@pol-med.tech">biuro@pol-med.tech</a></li>
+        <li>Telefon: +48 52 5000 260; +48 601 78 75 77;</li>
+    </ul> -->
+    <div id="ic-form" class="olejeForm">
+    
+        <div id="ic-text">
+            <div class="ic-text-container">
+                <h2><%= kontakt.formTitle %></h2>
+                <hr>
+                <h3><%= kontakt.formSubtitle %></h3>
+            </div>
+        </div>
+    
+        <div id="ic-input">
+            <form action="/wiadomosc" method="POST">
+                <div class="ic-input-details">
+                    <input name="name" type="text" size="17" placeholder="<%= kontakt.formImie %>" required>
+                    <input name="telephone" type="tel" size="15" placeholder="<%= kontakt.formNumer %>">
+                    <input name="email" type="email" size="27" placeholder="<%= kontakt.formEmail %>" required>
+                    <input name="strona" type="hidden" value="Kontakt">
+                </div>
+                <textarea name="message" placeholder="<%= kontakt.formWiadomosc %>" required></textarea>
+                <input class="ic-submit" type="submit" value="<%= kontakt.formSubmit %>">
+            </form>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer.ejs', {activePage: 'kontakt'}) %>

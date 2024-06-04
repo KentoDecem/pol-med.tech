@@ -1,0 +1,52 @@
+{
+  "title_h1": "Privacy Policy",
+  "sections": [
+    {
+      "id": "informacje_polmed",
+      "h2": "Personal Data Controller",
+      "content_p_1": "The controller of personal data is:",
+      "content_h3_1": "Company: Pol-Med Sp. z o.o.",
+      "content_h3_2": "Address: <a href=\"https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7\" target=\"_blank\">ul. Leśna 38, 86-031 Osielsko</a>",
+      "content_h3_3": "Tax Identification Number (NIP): PL9671167341</h3><h3>National Official Business Register (REGON): 09314084600000</h3><h3>National Court Register (KRS): 0000166787",
+      "content_h3_4": "Email Address: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>",
+      "content_h3_5": "Phone: <a href=\"tel:+48338223333\">+48 33 822 33 33</a>"
+    },
+    {
+      "id": "dane_osobowe",
+      "h2": "Personal Data",
+      "content_p_1": "We collect and process users' personal data in accordance with Regulation (EU) 2016/679 (GDPR).",
+      "content_p_2": "No personal data is collected on our website without explicit user consent.",
+      "content_p_3": "Our website is SSL certified, ensuring encrypted transmission of information."
+    },
+    {
+      "id": "przetwarzanie_danych",
+      "h2": "Purpose and Scope",
+      "content_p_1": "<p>If a user voluntarily provides personal data (e.g., in a <a href=\"https://pol-med.tech/formularz_kontaktowy\" target=\"_blank\">contact form</a>), we will process it solely for the specified purpose.",
+      "content_p_2": "Personal data won't be disclosed to third parties or used for marketing without user consent."
+    },
+    {
+      "id": "statystyki",
+      "h2": "Tracking Technologies",
+      "content_p_1": "We use tools like Google Analytics for traffic analysis, solely for statistical purposes to enhance service quality."
+    },
+    {
+      "id": "utrzymanie_serwisu",
+      "h2": "Website Maintenance",
+      "content_p_1": "Our website is maintained by <a href=\"https://home.pl/\" target=\"_blank\">Home.pl</a> ensuring high security standards."
+    },
+    {
+      "id": "prawa_uzytkownika",
+      "h2": "Users' Rights",
+      "content_p_1": "Users have rights under GDPR such as access, rectification, erasure, or restriction of personal data processing. For inquiries, contact: <a href=\"mailto:biuro@pol-med.tech\">biuro@pol-med.tech</a>."
+    },
+    {
+      "id": "zmiany_polityki_prywatnosci",
+      "h2": "Changes to Privacy Policy",
+      "content_p_1": "We reserve the right to update the Privacy Policy to comply with regulations. Visit <a href=\"https://pol-med.tech/polityka_prywatnosci\" target=\"_blank\">https://pol-med.tech/polityka_prywatnosci</a> for the current version."
+}
+  ],
+  "update_date": "02.10.2023",
+  "last_updated": "Last updated: <span>02.10.2023 <img src='/images/navigation/arrow.png' class='arrow'> </span>",
+  "legacy": "This privacy policy is outdated. Please visit our <a href=\"https://pol-med.tech/polityka_prywatnosci\">privacy policy</a> for the latest version.",
+  "download": "Download PDF"
+}

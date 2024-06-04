@@ -1,0 +1,331 @@
+#ON-HeroContainer {
+    width:100%;
+    height:85vh;
+    min-height: 450px;
+    background-image: url('../images/o_nas/o\ nas-compressed.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+#ON-HeroContainer::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(56, 57, 69, 0.236);
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #ON-HeroContainer::after {
+        -webkit-backdrop-filter: blur(0.15em);
+        backdrop-filter: blur(0.15em);
+    }
+}
+
+#ON-Hero {
+    z-index: 3;
+    width:fit-content;
+    background-color: rgba(255, 255, 255, 0.43);
+    height: fit-content;
+    border-radius: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 25px 100px rgba(255, 255, 255, 0.792);
+    border: solid rgba(255, 255, 255, 0.607);
+    border-width: 7px 2px;
+    margin: 0 15px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #ON-Hero {
+        -webkit-backdrop-filter: brightness(1.4) blur(0.2em);
+        backdrop-filter: brightness(1.4) blur(0.2em);
+    }
+}
+
+
+#ON-Hero h1 {
+    margin: 50px 125px;
+    font-size: 3em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to right, var(--main-blue), var(--main-red));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(43, 87, 126, 0.444);
+    filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.708)) drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.768)) drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.544)) drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.489)) drop-shadow(0px 0px 6px white) drop-shadow(0px 0px 3px white);
+    text-shadow: 0 5px 5px rgba(205, 221, 255, 0.745);
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+#ON-Hero h1 span {
+    text-shadow: none;
+    color:white;
+    filter:none;
+}
+
+.ON-Blob {
+    opacity: 0.8;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+
+/* Animacja waving hand */
+@keyframes waving-hand {
+    0% {
+      transform: rotate(0deg); /* Ręka zaczyna od pozycji wyjściowej */
+    }
+    25% {
+      transform: rotate(15deg); /* Ręka obraca się o 15 stopni w prawo */
+    }
+    50% {
+      transform: rotate(-15deg); /* Ręka obraca się o 15 stopni w lewo */
+    }
+    75% {
+      transform: rotate(15deg); /* Ręka obraca się o 15 stopni w prawo */
+    }
+    100% {
+      transform: rotate(0deg); /* Ręka wraca do pozycji wyjściowej */
+    }
+  }
+  
+  #waving-hand {
+    animation-name: waving-hand; /* Przypisanie animacji do elementu */
+    -webkit-animation-name: waving-hand;
+    animation-duration: 2s; /* Czas trwania animacji */
+    transform-origin: 70% 70%; /* Punkt obrotu - dolny lewy róg dłoni */
+  }
+
+
+
+/* Wprowadzenie */
+/* -------------- */
+#ON-WprowadzenieContainer {
+    padding:100px 0;
+    position: relative;
+    background-color: white;
+    z-index: 3;
+    width:100%;
+    min-height: 500px;
+
+    display:flex;
+    justify-content: center;
+}
+
+#ON-Wprowadzenie {
+    width:70%;
+    height: 100%;
+    display: flex;
+    gap:45px;
+    flex-direction: column;
+}
+
+#ON-Wprowadzenie h2, #ON-Lokalizacja h2, #ON-Misja h2 {
+    margin:0;
+    font-size: 2.4em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 550;
+    color: var(--main-blue);
+}
+
+#ON-Wprowadzenie p:nth-of-type(1) {
+    color: var(--main-blue);
+    border: solid var(--main-blue);
+    background: linear-gradient(to right, #1c375b4d, rgba(255, 255, 255, 0.051));
+}
+
+#ON-Wprowadzenie p:nth-of-type(2) {
+    color: #2a363c;
+    border: solid #2a363c;
+    background: linear-gradient(to right, #2a363c55, rgba(255, 255, 255, 0.051));
+}
+
+#ON-Wprowadzenie p:nth-of-type(3) {
+    color: #013F3C;
+    border: solid #013F3C;
+    background: linear-gradient(to right, #013f3c4c, rgba(255, 255, 255, 0.051));
+}
+
+#ON-Wprowadzenie p, #ON-Misja p, #ON-Misja li {
+    margin:0;
+    font-size: 1.6em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 450;
+    color: var(--main-blue);
+    padding: 15px 21px;
+    
+    border-width: 0px 0px 0px 4px !important;
+    border-radius: 5px;
+}
+
+
+
+
+/* Misja i Cele */
+#ON-MisjaContainer {
+    position:relative;
+    padding:0;
+    background-color: white;
+    z-index: 3;
+    width:100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#ON-Misja {
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    gap:80px;
+}
+.ON-Div {
+    padding:35px;
+    display:flex;
+    width: fit-content;
+    flex-direction: column;
+    gap:10px;
+    border: double white 15px;
+    background-color: var(--main-blue);
+}
+
+.ON-Div > * {
+    color: white !important;
+}
+
+.ON-Div h2 {
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+.ON-Div img {
+    width:60px;
+    height: auto;
+}
+.MisjaFirmy {
+    max-width: 1000px;
+}
+
+#ON-Misja p {
+    padding:0;
+}
+
+#ON-Misja ul {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+#ON-Misja li {
+    list-style-type: square;
+    padding:0;
+    color:white;
+}
+
+
+
+
+.hills {
+    position:absolute;
+    width:100%;
+    height:auto;
+    bottom:0;
+    z-index: -1;
+}
+
+
+/* Lokalizacja */
+#ON-LokalizacjaContainer {
+    padding:20px 0 100px 0;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 3;
+    width:100%;
+    min-height: 500px;
+
+    display:flex;
+    justify-content: center;
+}
+
+#ON-Lokalizacja {
+    width:70%;
+    display: flex;
+    align-items: center;
+}
+#ON-LokalizacjaInside {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap:35px;
+    /* background-color: var(--main-blue); */
+    /* background: linear-gradient(to bottom, transparent, var(--main-blue)); */
+    padding: 100px 0;
+    border-radius: 50px;
+    border: double white;
+    border-width: 0 0 0 5px;
+}
+#ON-Lokalizacja h2 {
+    margin:0;
+    font-size: 2.4em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 550;
+    color: var(--main-blue);
+}
+#ON-Lokalizacja h3 {
+    margin:0;
+    font-size: 1.9em;
+    font-family: var(--font-main), sans-serif;
+    font-weight: 550;
+    color: var(--main-blue);
+}
+#ON-Lokalizacja iframe {
+    border-radius: 25px;
+    box-shadow: 0 5px 15px white;
+    width:90%;
+}
+
+.hills-bg {
+    position:absolute;
+    width:100%;
+    height:auto;
+    top:0;
+    z-index: -1;
+}
+
+@media (max-width:800px) {
+    #ON-Hero h1 {
+        font-size: 2.4em;
+    }
+
+    #ON-Wprowadzenie h2, #ON-Lokalizacja h2, #ON-Misja h2 {
+        font-size: 2em;
+    }
+
+    #ON-Lokalizacja h3 {
+        font-size: 1.4em;
+    }
+
+    #ON-Wprowadzenie p, #ON-Misja p, #ON-Misja li {
+        font-size: 1.3em;
+    }
+
+    .ON-Div h2 {
+        flex-direction: column-reverse;
+    }
+
+    .ON-Blob {
+        display:none;
+    }
+}

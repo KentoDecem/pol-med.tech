@@ -1,0 +1,78 @@
+<footer>
+
+    <div class="footer-pol-med">
+        <h3>Pol-Med<img src="/images/footer/navigation.png"></h3>
+        <h4>ul. <a href="https://maps.app.goo.gl/t8s2ppjCwsCvdeTM7" target="_blank">Leśna 38</a></h4>
+        <h4>86-031 Osielsko</h4>
+        <h4><%= footer.polska %> 🇵🇱</h4>
+    </div>
+    <div class="footer-contact">
+        <h3> <%= navigation.kontakt %> <img src="/images/footer/phone-call1.png"></h3>
+        <h4>tel. <a href="tel:+48338223333">+48 52 5000 260</a></h4>
+        <h4>tel. <a href="tel:+48338223333">+48 601 78 75 77</a></h4>
+        <% if(activePage == "edukacja") { %>
+            <h4>email: <a href="mailto:edukacja@pol-med.tech">edukacja@pol-med.tech</a></h4>
+        <% } else if(activePage == "narzedzia") { %>
+            <h4>email: <a href="mailto:narzedzia@pol-med.tech">narzedzia@pol-med.tech</a></h4>
+        <% } else if(activePage == "oleje") { %>
+            <h4>email: <a href="mailto:oleje@pol-med.tech">oleje@pol-med.tech</a></h4>
+        <% } else { %>
+            <h4>email: <a href="mailto:biuro@pol-med.tech">biuro@pol-med.tech</a></h4>
+        <% } %>
+    </div>
+    <div class="footer-links">
+        <h3> <%= footer.linki %> <img src="/images/footer/link.png"></h3>
+        <h4><a href="/kontakt"> <%= footer.formularz_kontaktowy %> </a></h4>
+        <h4><a href="/polityka_prywatnosci"> <%= footer.polityka_prywatnosci %></a></h4>
+        <h4><a href="/prawa_autorskie"> <%= footer.copyright %></a></h4>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Animate when element visible -->
+<script src="/scripts/jquery-visible.js"></script>
+<script src="/scripts/appear-animations.js"></script>
+
+<script src="/scripts/language-button.js"></script>
+<script src="/scripts/privacy-policy-logs.js"></script>
+<script src="/scripts/download-privacy-policy.js"></script>
+
+<script src="/scripts/edukacja-hero.js"></script>
+<script src="/scripts/edukacja-slideshow.js"></script>
+<script src="/scripts/edukacja-stanowiska.js"></script>
+
+<script src="/scripts/narzedzia-book.js"></script>
+
+<!-- Smooth Scroll -->
+<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>

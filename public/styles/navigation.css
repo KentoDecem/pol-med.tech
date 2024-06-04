@@ -1,0 +1,440 @@
+:root {
+    /* Color Pallete */
+    --main-blue: #1C375B;
+    --main-red: #8E2C25;
+
+    --border-grey: #CACED1;
+    --hover-white: rgb(245, 245, 245);
+    --footer-black: #00000067;
+    --dropdown-white: rgb(255, 255, 255);
+    
+    --hero-white: rgba(235, 235, 235, 1);
+
+    --button-green: #34607c;
+
+    /* Font Families */
+    --font-main: "Exo 2";
+    --font-hero: "Expletus Sans";
+
+    /* Font Sizes */
+    --size-menu: 24px;
+    --size-languages:18px;
+    --size-privacy-policy: 42px;
+
+}
+
+/* DOdaj osobny email do stopki w zależności od aktualnej strony */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--hover-white);
+    scroll-behavior: smooth;
+    overflow-x:hidden !important;
+}
+
+nav {
+    position:relative;
+    z-index: 10000;
+    width:100% !important;
+    /* position:relative; */
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1.5px 0px 0px var(--border-grey);
+    filter: drop-shadow(0px 1px 4px var(--border-grey)) drop-shadow(0px 0px 4px var(--border-grey));
+    margin-bottom: 0px; /* distance from main content */
+}
+
+/* Logo and Menu */
+nav .left {
+    display: flex;
+    align-items: center;
+    gap:50px;
+    margin-left: 5%;
+}
+
+/* Language button */
+nav .right {
+    min-height:inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+nav li {
+    width:fit-content;
+}
+
+nav ul a {
+    position:relative;
+    color: var(--main-blue);
+    text-decoration: none;
+    font-family: var(--font-main), sans-serif;
+    font-size: var(--size-menu);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-right: 25px;
+    white-space: nowrap;
+    transition: letter-spacing 0.3s, margin 0.3s;
+}
+
+nav ul a::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left:-5px;
+    width:98%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--main-blue);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+nav ul a:hover::after {
+    transform: scaleX(1);
+}
+
+
+nav ul a:hover {
+    letter-spacing: 0.15em;
+    margin:0;
+}
+
+.navUlAppear {
+    transform: translateX(75px);
+    opacity: 0;
+    animation:navUlAppear 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navUlAppear {
+    0% {
+        transform: translateX(75px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.pol-med_logo {
+    width: 168px;
+    border-radius: 50%;
+    transition: filter 0.3s ease-out;
+}
+
+.pol-med_logo:hover {
+    filter:contrast(1.7) brightness(1.1) !important;
+}
+
+.navLogoAppear {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation:navLogoAppear 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navLogoAppear {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.languageContainer {
+    /* position:relative; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.languageButton {
+    position: relative;
+    color: var(--main-blue);
+    font-family: var(--font-main), sans-serif;
+    font-size: var(--size-languages);
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 1px solid var(--border-grey);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: letter-spacing 0.3s, background-color 0.3s;
+}
+
+.languageButton:hover {
+    letter-spacing: 0.15em;
+    background-color: var(--hover-white);
+}
+
+.flag {
+    width: 25px;
+    filter: drop-shadow(0px 1px 4px var(--border-grey));
+}
+
+.arrow {
+    width: 10px;
+    margin-left: 10px;
+    transition: transform 0.5s;
+}
+
+.rotateArrow {
+    transform: rotate(180deg);
+}
+
+.languageDropdown {
+    background-color: var(--dropdown-white);
+    position:absolute;
+    z-index: 2;
+
+    width:150px;
+    height:fit-content;
+    bottom: -155px;
+
+    color: var(--main-blue);
+    font-family: var(--font-main), sans-serif;
+    font-size: var(--size-languages);
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+
+    border: 1px solid var(--border-grey);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+
+    opacity:0;
+    pointer-events: none;
+}
+
+.languageDropdown:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+  top:-10%;
+  left: 32%;
+  border: 9px solid transparent;
+  filter:drop-shadow(-1.3px 0px 0 var(--border-grey));
+  border-right-color: var(--dropdown-white);
+  rotate:90deg;
+}
+
+.showDropdown {
+    animation: showDropdown 0.5s;
+    animation-fill-mode: forwards;
+    pointer-events: auto;
+}
+
+@keyframes showDropdown {
+    0% {
+        opacity:0;
+        scale:0.5;
+        transform: translateY(-100px);
+        pointer-events: auto;
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+.hideDropdown {
+    animation: hideDropdown 0.5s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+.hideDropdownFast {
+    animation: hideDropdownFast 0.2s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+@keyframes hideDropdown {
+    0% {
+        opacity:1;
+        transform: translateY(0);
+        pointer-events: none;
+    }
+    100% {
+        opacity:0;
+        scale: 0.5;
+        transform: translateY(-100px);
+        pointer-events:none;
+    }
+}
+
+
+@keyframes hideDropdownFast {
+    0% {
+        opacity:1;
+        transform: translateY(0);
+        pointer-events: none;
+    }
+    100% {
+        opacity:0;
+        scale: 0.5;
+        transform: translateY(-50px);
+        pointer-events:none;
+    }
+}
+
+.languageDropdown div {
+    display: flex; 
+    justify-content: center;
+    gap:10px;
+    padding: 5px;
+    border-radius:5px;
+    position:relative;
+    cursor: pointer;
+}
+
+.languageDropdown div::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width:98%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--main-blue);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.languageDropdown div:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+.activePage {
+    color: var(--main-red);
+}
+.activePage::after {
+
+    background-color: var(--main-red);
+}
+
+@media (max-width:2150px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:900px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav .left {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav .right{
+        min-height:fit-content;
+        margin: 0 0 0 0;
+        align-self: end;
+    }
+
+    .languageContainer {
+        align-items: end;
+        justify-content: end;
+    }
+
+    .languageButton {
+        border-bottom: 0;
+        border-right: 0;
+        border-radius: 10px 0 0 0;
+        margin: 0;
+        gap: 10px;
+    }
+    .languageDropdown {
+        bottom: -175px;
+    }
+
+
+    .languageDropdown:before {
+        left: 68%;
+    }
+
+    .languageName {
+        display: none;
+    }
+
+    .pol-med_logo {
+        margin-top: 15px;
+    }
+
+    .arrow {
+        margin: 0;
+    }
+
+    @keyframes navUlAppear {
+        0% {
+            transform: translateY(-75px);
+            scale: 0.6;
+            opacity: 0;
+            filter: blur(21px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes navLogoAppear {
+    0% {
+        transform: translateY(-25px);
+        scale:0.5;
+        opacity: 0;
+        filter: blur(2px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+}

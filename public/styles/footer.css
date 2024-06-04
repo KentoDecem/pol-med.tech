@@ -1,0 +1,148 @@
+footer {
+    z-index: 40;
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:75px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-blue);
+    color:white;
+    font-family: var(--font-main), sans-serif;
+    padding:75px 0px;
+    margin-top:0px; /* distance from main content */
+    /* box-shadow: 0px -1.5px 2px 0px var(--footer-black);
+    filter: drop-shadow(0px -4px 4px var(--footer-black)); */
+    /* box-shadow: 0px -2px 0px var(--main-blue); */
+    filter: none;
+
+    overflow-x: hidden;
+}
+footer div{
+    margin-left:20px;
+    margin-right:20px;
+    display:flex;
+    flex-flow: column wrap;
+    gap:10px;
+    width:270px;
+    white-space: nowrap;
+}
+
+
+
+footer h3{
+    position:relative;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    font-size: var(--size-menu);
+    /* align-self: center; */
+    margin:0 0 5px 0;
+    text-align: center;
+    padding-left: 7px;
+    padding-right:7px;
+    width: fit-content;
+    border-radius: 20%;
+    border-bottom: 3px rgb(255, 255, 255) solid;
+}
+
+footer h4 {
+    font-size: var(--size-languages);
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+
+footer h3 img {
+    right:-25px;
+    width:22px;
+    position:absolute;
+}
+
+footer h4 a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: inherit;
+    transition: letter-spacing 0.3s
+}
+
+footer h4 a:hover {
+    letter-spacing: 0.05em;
+}
+
+footer h4 a::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width:98%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+footer h4 a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Animations */
+
+
+.footer-pol-med-appear {
+    animation:navFooterAppear 0.8s;
+
+}
+
+.footer-contact-appear {
+    animation:navFooterAppear 0.8s 0.1s;
+}
+
+.footer-links-appear {
+    animation:navFooterAppear 0.8s 0.2s;
+}
+
+.footer-pol-med, .footer-contact, .footer-links {
+    transform: translateX(100px);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navFooterAppear {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* TODO
+// 1. Add border-top with box-shadow.
+// 2. Add repairing car image on top of nav, when on edukacja page.
+//3. Add <a> hyperlinks links with hover fancy 'after' line. Like:
+    // 3.1 links
+    // 3.2 callings, mails redirection
+    // 3.3 maps when address clicked
+// 4. Add responsivness @media query or even without
+// 5. Add @keyframes animation that load when element visible on page.
+6. Finish policy privacy website,
+    //6.1 add hyperlinks with hover fancy 'after' line, hyperlink for etc, "home.pl"
+    //6.2 add actualization log (update changes visble).
+    6.3 Add footer button go to top.
+        // Change the name ostatnia aktualizacja jeśli werja jest przestarzała 
+        // Add more border radius to the selected one version so it will be obvious which version is selected 
+        // redirect /education to edukacja and atc... 
+    // 6.4 make it responsive 
+    // 6.5 add subtle animations appears
+    //6.6 look at other privacy policy website to take fancy staff. 
+    // 6.7 Add some icons etc. 
+    // 6.8 And of course language support.
+
+7. Start Creating the thing! EDUKACJA.
+*/

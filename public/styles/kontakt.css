@@ -1,0 +1,205 @@
+
+/* Contact Form */
+#ic-form {
+    position: relative;
+    z-index: 10;
+    background-color: rgb(240, 240, 240);
+    height:fit-content;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+#ic-form::before {
+    position:fixed;
+    z-index: -1;
+    top:0;
+    width: 100%;
+    height:100%;
+    content: "";
+    background-image: url(../images/kontakt/contact-compressed.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+/* For broken background attachment */
+/* @media (max-width: 767px) {
+    #ic-form {
+        background-attachment: scroll;
+    }
+} */
+
+
+#ic-form::after {
+    position: absolute;
+    z-index: 11;
+    top:0;
+    left:0;
+    content: "";
+    width: 100%;
+    height:110%;
+    background-color: #1f1f1f9d !important;
+    filter:blur(2px);
+}
+
+#ic-text {
+    width:30%;
+    height:100%;
+    position: relative;
+    z-index: 15;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.ic-text-container {
+    width:fit-content;
+    height:fit-content;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ic-text hr {
+    border: 2px solid white;
+    border-radius: 85%;
+    width:100%;
+}
+
+#ic-text h2 {
+    font-family: var(--font-hero), sans-serif;
+    font-size: 2.7em;
+    color:white;
+    text-align: center;
+    margin:0;
+    max-width: 450px;
+    width: 100%;
+}
+
+#ic-text h3 {
+    margin:5px 15px;
+    font-family: var(--font-hero), sans-serif;
+    font-size: 1.6em;
+    color:white;
+    text-align: center;
+}
+
+#ic-input {
+    position: relative;
+    z-index: 15;
+    height:100%;
+    width:70%;
+    margin:50px
+}
+
+#ic-input {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ic-input form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+#ic-input textarea, .ic-input-details input {
+    background-color: white;
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    font-size: 1.6em;
+    border:0;
+    border-radius: 5px;
+    padding:7px;
+    font-family: var(--font-hero), sans-serif;
+    color: var(--main-blue);
+    transition: outline 0.3s;
+}
+
+.ic-submit {
+    font-family: var(--font-hero), sans-serif;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
+    background-color: var(--main-blue);
+    border-radius: 35px;
+    width: fit-content;
+    padding: 7px 24px;
+    border:none;
+    transition: scale 0.3s;
+}
+.ic-submit:hover {
+    scale:1.1;
+    cursor:pointer;
+}
+
+#ic-input textarea {
+    box-sizing: border-box;
+    min-height:200px;
+    min-width: 50%;
+    width:100%;
+    resize: vertical;
+}
+
+.ic-input-details {
+    display:flex;
+    gap: 25px;
+}
+
+/* .ic-input-details input {
+
+} */
+
+.ic-input-details input:focus, .ic-input textarea:focus {
+    outline: 2px solid white;
+    outline-offset: 5px;
+}
+
+/* Formularz */
+@media(max-width: 1600px) {
+    #ic-form {
+        flex-direction: column;
+    }
+    #ic-text {
+        width:fit-content;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    #ic-input {
+        width:fit-content;
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width: 1300px) {
+    #ic-form {
+        min-height: 800px;
+    }
+    
+    .ic-input-details {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .ic-input-details input {
+        width:90% !important;
+    }
+    #ic-input textarea {
+        width: 95%;
+    }
+
+    #ic-input {
+        margin-bottom: 100px;
+    }
+
+    #ic-text h2 {
+        font-size: 2.2em;
+    }
+}
